@@ -1,0 +1,32 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both
+    }
+}
+
+
+
+// //media queriy manager
+// /*
+// 0-600px:  phone
+// 600-900px: tablet portrait
+// 900-1200px: tabled landscape
+// [1200-1800p]: este es el medio donde estamos trabajando
+// 1800px +: big desktop
+// */
+
+// @mixin respont-phone {
+//     @media (max-width:600px) {@content};
+    
+// }
+
+// /*
+// $breakpoint arguement choises:
+// -phone
+// -tab-port
+// -tab-land
+// -big-dektop
+// */
+// @mixin respond ($breakpoint)

@@ -1,0 +1,214 @@
+.card{
+    //funtionality
+    
+    perspective: 200rem; //perspective hace efecto de acercamient hacia uno y debe llevar un numero alto 
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 28rem;
+
+  &__side {
+    color: #fff;
+    font-size: 2rem;
+
+    height: 28rem;
+    transition: all .8s ease; //ease es el temporisador de transicion y se pone oara que la transicion sea mas suave
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; //si lo ponemo oculto (hidden) oculta la parte posterior de un elemento
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 6px 5px 17px 5px rgba(0,0,0,0.58); 
+    box-shadow: 6px 5px 17px 5px rgba(0,0,0,0.58);
+
+
+    &--front {
+        background:$color-tertiary;
+    }
+
+    &--back {
+        transform: rotateY(180deg);
+        
+        //esta parte tiene el gradier de atras
+        
+        // &-1 {
+        //     background-image: linear-gradient(to right bottom, $color-secundary-light, $color-secundary-dark);
+        // }
+    }
+    
+  }
+    
+
+
+    &:hover &__side--front{  //aqui les estamos diciendo que cuando pasemos el mause por .card se transforme en .card__side
+        transform: rotateY(-180deg);
+    }
+
+
+    &:hover &__side--back{  //aqui les estamos diciendo que cuando pasemos el mause por .card se transforme en .card__side
+        transform: rotateY(0);
+    }
+
+
+    //FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 12rem;
+        background-blend-mode: soft-light;
+        clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+
+        &--1 {
+            background-image:  linear-gradient(to right bottom, $color-green-dark-1, $color-primary), 
+            url(../../img/maizz.jpg);
+            
+        }
+
+        &--2 {
+            background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-blue-dark), 
+            url(../../img/carmen.jpg);
+            
+        }
+
+        &--3 {
+            background-image:  linear-gradient(to right bottom, $color-blue-1, $color-blue-2), 
+            url(../../img/higoo.jpg);
+        }
+
+        &--back-maiz{                       //parde de atras
+            background-blend-mode: overlay;
+            clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
+            background-image:  linear-gradient(to right bottom, $color-green-dark-1, $color-primary), 
+            url(../../img/maizzz.jpeg);
+        }
+
+        &--back-carmen {
+            clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
+            background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-blue-dark), 
+            url(../../img/carmenn.jpg);
+        }
+
+        &--back-higo {
+            background-blend-mode: overlay;
+            clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
+            background-image:  linear-gradient(to right bottom, $color-green-dark, $color-black), 
+            url(../../img/higooo.jpg);
+        }
+    }
+
+    &__header {
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-tertiary;
+        position: absolute;
+        top: 8rem;
+        right: 1rem;
+        width: 70%;
+    }
+
+    &__header-span {
+        padding: 2px 12px;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1{
+            -webkit-box-shadow: 11px 11px 31px 1px rgba(0,0,0,0.75); 
+            box-shadow: 11px 11px 31px 1px rgba(0,0,0,0.75);
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-green-dark-1, .85), 
+            rgba($color-primary, .85));
+        }
+
+        &--2 {
+            font-size: 17.7px;
+            padding: 8px 8px;
+            -webkit-box-shadow: 11px 11px 31px 1px rgba(0,0,0,0.75); 
+            box-shadow: 11px 11px 31px 1px rgba(0,0,0,0.75);
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-tertiary-light, .85), 
+            rgba($color-blue-dark, .85));
+        }
+
+        &--3{
+            -webkit-box-shadow: 11px 11px 31px 1px rgba(0,0,0,0.75); 
+            box-shadow: 11px 11px 31px 1px rgba(0,0,0,0.75);
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-blue-1, .85), 
+            rgba($color-blue-2, .85));
+        }
+    }
+    
+
+
+    &__details {
+        padding: 38px;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        color: $color-grey-dark-2;
+
+        &-uno {
+            font-size: 16px;
+            padding: 38px;
+            text-align: center;
+            justify-content: center;
+            color: $color-grey-dark-2;
+
+            &--1 {
+                font-size: 16px;
+                padding: 3px;
+                margin: 13px;
+                text-align: center;
+                justify-content: center;
+                color: $color-grey-dark-2;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-dos {
+            font-size: 18px;
+            padding: 38px;
+            text-align: center;
+            justify-content: center;
+            color: $color-grey-dark-2;
+
+            &--2 {
+                font-size: 18px;
+                padding: 3px;
+                margin: 13px;
+                text-align: center;
+                justify-content: center;
+                color: $color-grey-dark-2;
+                
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-tres {
+            font-size: 18px;
+            padding: 38px;
+            text-align: center;
+            justify-content: center;
+            color: $color-grey-dark-2;
+            &--3 {
+                font-size: 16px;
+                padding: 3px;
+                margin: 13px;
+                text-align: center;
+                justify-content: center;
+                color: $color-grey-dark-2;
+                
+                a {
+                    text-decoration: none;
+                } 
+            }
+        }
+
+    }
+}

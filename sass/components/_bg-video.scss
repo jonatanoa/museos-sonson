@@ -1,0 +1,16 @@
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .30;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; //el elemento en este caso el video llenara por completo el espacio del padre mientars mantiene su relacio de aspecto
+    }
+}

@@ -1,0 +1,120 @@
+.btn{
+	&:link,
+	&:visited {
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 15px 40px;
+		display: inline-block;
+		border-radius: 20px;
+		transition: all 0.2s;
+		position: relative;
+
+	}
+
+	&:hover{
+		transform: translateY(-3px);
+		box-shadow: 0 10px 20px rgba($color-black,.4);
+
+		&::after{
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: -5;
+		}
+	}
+	&:active{
+		transform: translateY(-1px);
+		box-shadow: 0 5px 10px rgba($color-black,.2);
+	}
+
+	&{
+		background-color: $color-tertiary;
+		color: $color-green-dark;
+	}
+	&::after{
+		content: "";
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1; /*define la posicion de un elemento si esta encima del otro*/
+		transition: all .4s;
+
+		&{
+			background-color: $color-tertiary;
+		}
+	}
+		
+}
+.boton-animado{
+    -webkit-animation-name: moveInLeft;
+animation-name: moveIntop;
+-webkit-animation-duration: 5s;
+animation-duration: 5s;
+}
+
+.btn-text {
+	&:link,
+	&:visited {
+		font-size: $default-font-size;
+		color: $color-green-dark-1;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 1px solid $color-green-dark-1;
+		padding: 3px;
+		transition: all .2s;
+	}
+
+	&:hover {
+		background-color: $color-green-dark-1;
+		color: $color-white;
+		box-shadow: 0 1rem 2rem rgba($color-black,.3);
+		transform: translateY(-2px);
+
+	}
+
+	&:active {
+		box-shadow: 0 .5rem 1rem rgba($color-black,.3);
+		transform: translateY(0);
+	}
+
+}	
+
+.btn-2{
+	&:link,
+	&:visited {
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 15px 40px;
+		display: inline-block;
+		border-radius: 20px;
+		transition: all 0.2s;
+		position: relative;
+		right: -34rem;
+		top: -1rem;
+
+	}
+
+	&:hover{
+		transform: translateY(-3px) skewy(7deg); //skewy (sesgado) se usa para contrarestar el sesgado general
+		box-shadow: 0 10px 20px rgba($color-black,.4);
+
+		&::after{
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: -5;
+		}
+	}
+	&:active{
+		transform: translateY(-1px);
+		box-shadow: 0 5px 10px rgba($color-black,.2);
+	}
+
+	&{
+		background-color: rgba($color-tertiary, .5);
+		color: $color-black;
+	}
+	&{
+		background-color: rgba($color-tertiary, .5)
+	}
+}

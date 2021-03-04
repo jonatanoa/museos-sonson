@@ -1,0 +1,69 @@
+.header {
+	height: 95vh;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	/*para centrar*/
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	/*para mover mover hacia el centro hacia abajo*/
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	/*para mover hacia el centro hacia el lado*/
+	/*vh significa v:vista h: heigh altura. el 95 es unn porcentaje, vh es toda la pantalla, e sla vista*/
+	background-image: -webkit-gradient(
+       linear,
+       right bottom, left top,
+       from(rgba($color-primary,0.00)),
+       to(rgba($color-primary,0.90))
+	), url(https://turibuscolombia.com/wp-content/uploads/2019/11/tour-sonson-antioquia06.jpg);
+	background-image: -o-linear-gradient(
+       right bottom,
+       rgba($color-primary,0.00),
+       rgba($color-primary,0.90)
+	), url(https://turibuscolombia.com/wp-content/uploads/2019/11/tour-sonson-antioquia06.jpg);
+	background-image: linear-gradient(
+       to left top,
+       rgba($color-primary,0.00),
+       rgba($color-primary,0.90)
+	), url(https://turibuscolombia.com/wp-content/uploads/2019/11/tour-sonson-antioquia06.jpg);	
+	background-size: cover;
+	/*para centrar la imagen*/
+	background-position: top;
+	/*para mover la imagen*/
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+	&-logo-box {
+		position: absolute;
+		top: 4rem; /*arriba*/
+		left: 4rem;	 /*izquierda*/
+	}
+	&-logo {
+		height: 5.5rem;
+	}
+	&-text-box{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		/*pone el texto en columna*/
+	}
+}

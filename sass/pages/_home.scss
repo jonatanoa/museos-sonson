@@ -1,0 +1,46 @@
+.section-about {
+    background-color: $color-grey-ligth-1;
+    padding: 25rem 0;
+    margin-top: -22vh;
+    
+}
+
+
+//seccion museos
+.section-features {
+    padding: 4rem 0;
+    background-image: linear-gradient(
+       to right bottom,
+       rgba($color-primary,0.00),
+       rgba($color-primary,0.90)
+	), url(../../img/plaza1.jpg);
+    background-size: cover;	
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * {
+        transform: skewY(7deg);
+    } 
+}
+
+//fiestas
+.party-section {
+    background-color: $color-grey-ligth-1;
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
+
+}
+
+//datos
+.section-data {
+    position: relative;
+    padding: 1rem 0;
+}
+
+
+//map
+.map-caracteristicas {
+    background-color: $color-grey-ligth-1;
+    padding-top: 10rem;
+
+}

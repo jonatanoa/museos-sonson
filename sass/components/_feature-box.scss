@@ -1,0 +1,39 @@
+.feature-box {
+    
+
+    &__img {
+        position: absolute;
+        top: -5rem;
+        right: 567px;
+        width: 13rem;
+        margin: -12em;
+        padding: 1.5rem;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .50);
+        transition: all .5s;
+    }
+
+    &__img:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+    
+    .abuelos {
+        right: 12rem;
+        top:19rem;
+    }
+
+    .religioso {
+        left: 48rem;
+        top: 11rem;
+    }
+
+    .ciudadela{
+        left: 12rem;
+        top: 3rem;
+    }
+    
+    .Maiz {
+        right: 47rem;
+    }
+}
+

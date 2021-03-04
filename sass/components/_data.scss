@@ -1,0 +1,100 @@
+.data {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    -webkit-box-shadow: 6px 5px 17px 5px rgba(0,0,0,0.58); 
+    box-shadow: 6px 5px 17px 5px rgba(0,0,0,0.58);
+    background-color: rgba($color-tertiary, .4);
+    border-radius: 3px;
+    padding: 4rem;
+    padding-left: 7rem;
+    font-size: $default-font-size;
+    color:$color-grey-dark-2;
+    transform: skewX(-13deg); //esta propiedad permite sesgar todo elemento, para que quede / /
+
+    // &>* {
+    //     transform: skewX(12deg); //este sirve para que el interior del elemento regresea su estado normal 
+    //                             y no se sesgue, pero solo seleccionara un hijo, para solucionar esto, se pone esta propiedad en el elemeto afectado
+    // }
+    &__shape { //circulo que contiene la img
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%) ;
+        shape-outside: circle(50% at 50% 50%) ;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-2rem) skewX(12deg); //traslate se usa para que el texto alrededor del cirulo se separe un poco mas
+        position: relative;
+    }
+
+
+    &__img {
+        height: 100%;
+        -webkit-transform: translateX(-8rem) scale(1.1);
+        transform: translateX(-8rem) scale(1.1); //se hizo traslate para centrar la imagen a el circulo
+        backface-visibility: hidden; //soluciona problemas provocados por el traslate
+        transition: all .5s;
+
+    }
+
+    &__img-1 {
+        height: 100%;
+        -webkit-transform: translateX(-1rem) translatey(-.6rem) scale(1.1);
+        transform: translateX(-1rem) translatey(-.6rem) scale(1.1); //se hizo traslate para centrar la imagen a el circulo
+        backface-visibility: hidden; //soluciona problemas provocados por el traslate
+        transition: all .5s;
+    }
+
+    &__text {
+        transform: skewX(12deg);
+
+        & h3 {
+            color: $color-black;
+        }
+        
+    }
+
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%); //centra, en este caso se pone 20% para que el titulo quede mas abajo y poder hacer le efecto
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden; //para solucionar problema de temblor al terminar un efecto
+    }
+
+    &:hover &__caption  { //queremos que cuando pase el mause cambie a caption
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-8rem) scale(1);
+        filter: blur(3px) brightness(80%); //este permite tener le desenfoque. blur es desenfoque. brightness es brillo
+    }
+
+    &:hover &__img-1 {
+        transform: translateX(-1rem) translatey(.6rem) scale(1);
+        filter: blur(3px) brightness(80%); //este permite tener le desenfoque. blur es desenfoque. brightness es brillo
+    }
+
+    &__texto-1 {
+        font-size: 21px;
+    }
+
+    &__texto-2 {
+        font-size: 19px;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+}

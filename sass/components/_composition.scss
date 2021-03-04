@@ -1,0 +1,46 @@
+.composition {
+    position: relative;
+    
+    &__photo {
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 1rem; //outline es contorno
+        &--p1 {
+            left: 0;
+            top: 1rem; //esto lo mueve hacia arriba
+
+        }
+
+        &--p2 {
+            right: 0;
+            top: 2rem; //esto lo mueve hacia arriba
+
+        }
+
+        &--p3 {
+            left: 20%;
+            top: 10rem; //esto lo mueve hacia arriba
+
+        }
+
+        &:hover {
+            outline: .5rem solid $color-green-dark-1;
+            transform: scale(1.50) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+
+
+    }
+
+    &:hover &__photo:not(:hover){ //cuando ponemos el mause subre la composicion, seleccionamos la foto de la composicion que no esta suspendida
+        transform: scale(.95);
+
+    }
+
+}
+

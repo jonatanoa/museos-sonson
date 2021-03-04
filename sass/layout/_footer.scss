@@ -1,0 +1,62 @@
+.footer {
+    background-image: linear-gradient(290deg, #7d8489 0, #526571 25%, #1f4459 50%, #002642 75%, #00082e 100%);
+    padding: 3rem 0;
+    font-size: 1.4rem;
+    color: $color-grey-ligth-1;
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &__navigation {
+        border-top: 1px solid $color-green-dark;
+        padding-top: 1rem;
+        display: inline-block;
+        width: 31rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-ligth-1;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .4s ease;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-green-ligth;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(4deg) scale(1.3);
+            background-color: $color-grey-dark-3;
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid $color-green-dark;
+        padding-top: 1rem;
+        display: inline-block;
+        text-align: center;
+    }
+}

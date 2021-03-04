@@ -1,0 +1,148 @@
+.navigation {
+    &__checkbox {
+        display: none; //este se pone para que el check no tenga decoraciones, solo el titulo del check
+    }
+
+    &__button {
+        background-color: $color-white;
+        height: 4.5rem;
+        width: 4.5rem;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 10px 20px rgba($color-black, .50);
+        text-align: center;
+        cursor: pointer;
+
+
+    }
+
+    &__background {
+        height: 3rem; //se hace height y width de misma medida porque el fondo es un circulo
+        width: 3rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 2.5rem;
+        right: 2.5rem;
+        // background-image: radial-gradient($color-green-ligth, $color-green-dark-1);
+        backdrop-filter: blur(.1px); //glass
+        z-index: 1000;
+        box-shadow: 0 10px 20px rgba($color-black,1);
+        transition: transform .8s  cubic-bezier(0.65, 0, 0.35, 1);
+        
+
+    }
+
+    &__nav {                //nav es el contenedor de list
+        height: 100vh; //vh es altura
+        position: fixed;
+        top: 0;
+        right: 0; //para que aparezca por la derecha
+        z-index: 1500;
+
+        opacity: 0; //esta parte se pondra con check para hacer el efecto del nav
+        width: 0; //el width empieza en 0 para terminar a 100% y de 100% a 0
+        transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+        text-align: center;
+        width: 100%; //esencial para el efecto de aparecer cuando se le da en el menu
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block; //hay que darle inline block para que el efecto de desplazamiento de la letra se dé 
+            font-size: 2rem;
+            font-family: 'Lobster', cursive;
+            font-weight: 100;
+            padding: .3rem 1rem;
+            color: $color-grey-dark-3;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%); //el deg da la inclinacion del cambio del color
+            background-size: 220%; //este permite rellaenar o vaciar el elemento del color especificado, junto con background-position haven el efecto de desplazamiento
+            transition: all .4s;
+        }
+       
+        &:hover,
+        &:active {
+            font-family: 'Lobster', cursive;
+            background-position: 100%;
+            color: $color-green-ligth;
+            transform: translateX(.5rem);
+            box-shadow: 0 10px 20px rgba($color-black,1);
+        }
+    }
+      //FUNCIONES
+    &__checkbox:checked ~ &__background { //estamos seleccionando el hermano de checkbox que es background para que cuando se le de click al menu se desplege el background
+        transform: scale(50);
+    }
+
+    &__checkbox:checked ~ &__nav { //estamos seleccionando el hermano de checkbox que es background para que cuando se le de click al menu se desplege el background
+        opacity: 1; 
+        width: 100%;
+    }
+
+
+    //icono de menu
+    &__icon {
+        position: relative;
+        margin-top: 35px;
+
+        &, //crea la linea del medio
+        &::before,
+        &::after {
+            width: 2rem;
+            height: 3px;
+            background-color: $color-grey-dark-3;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {  //las dos lineas
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {top: -.5rem;} //linea de arriba
+        &::after {top: .5rem;}//linea de abajo
+    }
+
+    &__button:hover &__icon::before { //linea de arriba
+        top: -.8rem;
+    }
+
+    &__button:hover &__icon::after { //linea de abajo
+        top: .8rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent; //para que al hacer click desaparezca la linea del medio
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top:0; //se especifica top 0 para que se crucen ambas lineas una entre otra (X), si no se especifica quedan (>)
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
