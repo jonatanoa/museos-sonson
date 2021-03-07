@@ -1,0 +1,96 @@
+
+
+.menu {
+    margin: auto;
+    top: 30px;
+    margin-left: -14px;
+    position: fixed;
+    
+    &-nav {
+        padding: 20px;
+        height: 35rem;
+        background: $color-blue-dark-2;
+        -webkit-box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.98); 
+        box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.98);
+        width: 22rem;
+        
+        
+
+        & h2 {
+            color: #dadada;
+            padding-left: 2px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+            display: inline-block;
+            font-weight: 500;
+            border-bottom: 2px solid #dadada;
+            text-transform: uppercase;
+            
+        }
+
+        & ul {
+            position: relative;
+        }
+        & li {
+            position: relative;
+            list-style: none;
+            text-decoration: none;
+            display: table;
+            margin: 10px 0;
+            padding-left: 34px;
+            padding-right: 5px;
+        }
+
+        & ul li::before
+        {
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: 0;
+            width: 33px;
+            height: 33px;
+            background: transparent;
+            border-radius: 34px;
+            transition: background 0.5s, width 0.5s;
+            transition-delay: 0.5s, 0s; // este en el hover hace que el efecto se quede un momento en el circulo y despues se alargue
+            border: 2px solid #03a9f4;
+        }
+
+        & ul li:hover::before { //cuando pase el mause se aumete el circulo al 100% del espacio
+            width: 100%;
+            background: #03a9f4; //hace que el color vaya de opaco a mas reteñido.
+            transition-delay: 0s, 0.5s;  // este en el hover hace que el efecto se quede un momento en el circulo y despues se alargue
+        }
+
+        & ul li::after {
+            content: "";
+            position: absolute;
+            top: 9px; //para que se centre la flecha en el circulo
+            left: 13px;
+            width: 6px;
+            height: 6px;
+            border-top: 2px solid #fff; //crea una pequeña linea hotizontal
+            border-right: 2px solid #fff;//linea que se une a la horizontal de forma diagonal
+            transform: rotate(45deg); //para que la flecha creada con los border, se enderece
+            transition: .5s;
+            transition-delay: 0s;
+        }
+        & ul li:hover::after {
+            left: 24px; //para que la flecha se vaya a la derecha
+            transition-delay: 0.5s;
+            transform: rotate(45deg) scale(2); //para que la flecha escale
+        }
+
+        & a{
+            text-decoration: none;
+        }
+        & ul li p 
+        {
+            position: relative;
+            z-index: 10;
+            padding: 5px 12px;
+            color: #dadada;
+        }
+    }
+
+}

@@ -800,3 +800,74 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 .map-caracteristicas {
   background-color: #f7f7f7;
   padding-top: 10rem; }
+
+.menu {
+  margin: auto;
+  top: 30px;
+  margin-left: -14px;
+  position: fixed; }
+  .menu-nav {
+    padding: 20px;
+    height: 35rem;
+    background: #0a0d36;
+    -webkit-box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.98);
+    box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.98);
+    width: 22rem; }
+    .menu-nav h2 {
+      color: #dadada;
+      padding-left: 2px;
+      margin-left: 50px;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-weight: 500;
+      border-bottom: 2px solid #dadada;
+      text-transform: uppercase; }
+    .menu-nav ul {
+      position: relative; }
+    .menu-nav li {
+      position: relative;
+      list-style: none;
+      text-decoration: none;
+      display: table;
+      margin: 10px 0;
+      padding-left: 34px;
+      padding-right: 5px; }
+    .menu-nav ul li::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 33px;
+      height: 33px;
+      background: transparent;
+      border-radius: 34px;
+      transition: background 0.5s, width 0.5s;
+      transition-delay: 0.5s, 0s;
+      border: 2px solid #03a9f4; }
+    .menu-nav ul li:hover::before {
+      width: 100%;
+      background: #03a9f4;
+      transition-delay: 0s, 0.5s; }
+    .menu-nav ul li::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 13px;
+      width: 6px;
+      height: 6px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: rotate(45deg);
+      transition: .5s;
+      transition-delay: 0s; }
+    .menu-nav ul li:hover::after {
+      left: 24px;
+      transition-delay: 0.5s;
+      transform: rotate(45deg) scale(2); }
+    .menu-nav a {
+      text-decoration: none; }
+    .menu-nav ul li p {
+      position: relative;
+      z-index: 10;
+      padding: 5px 12px;
+      color: #dadada; }
