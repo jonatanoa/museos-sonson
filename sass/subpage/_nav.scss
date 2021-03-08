@@ -3,16 +3,20 @@
 .menu {
     margin: auto;
     top: 30px;
-    margin-left: -14px;
-    position: fixed;
+    margin-left: -23.5rem;
+    position: sticky;
+    font-size: 14px;
+    z-index: -2000;
+    
     
     &-nav {
         padding: 20px;
+        margin-top: 20px;
         height: 35rem;
         background: $color-blue-dark-2;
         -webkit-box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.98); 
         box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.98);
-        width: 22rem;
+        width: 20rem;
         
         
 
@@ -88,7 +92,7 @@
         {
             position: relative;
             z-index: 10;
-            padding: 5px 12px;
+            padding: 6px 12px;
             color: #dadada;
         }
     }

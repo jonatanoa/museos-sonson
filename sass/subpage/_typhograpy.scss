@@ -1,0 +1,492 @@
+
+.museos {
+    
+    width: 55rem;
+    font-size: 20px;
+    text-align: justify;
+    position: absolute;
+    right: 4rem;
+    margin-left: 30rem;
+
+
+    & h4 {
+        text-align: center;
+    }
+
+     & h2 {
+        font-family: 'Lobster', cursive;
+         text-align: center;
+     }
+
+    &-intro {
+        margin-top: -35rem;
+        margin-bottom: 10rem;
+
+        &__title {
+            font-size: 2rem;
+            & h2 {
+                color: $color-primary-main;
+            }
+        }
+
+        & a {
+            text-decoration: none;
+        }
+    }
+    
+    &-grandparents {
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 17rem;
+                top: 29rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+                
+            }
+        }
+
+        & a {
+            text-decoration: none;
+        }
+
+        
+    }
+
+    &-religious {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 17rem;
+                top: 130rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+                
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    }
+
+    &-pablo {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 17rem;
+                top: 175rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    }    
+
+    &-corn {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 17rem;
+                top: 250rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    } 
+
+    &-memory {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 17rem;
+                top: 305rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    } 
+
+    &-culture {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 17rem;
+                top: 360rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    }
+    
+    &-arqueologica {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 22rem;
+                top: 420rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    } 
+
+    &-press {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 17rem;
+                top: 482rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    } 
+
+    &-romulo {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 20rem;
+                top: 532rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    } 
+
+    &-pantagoras {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 13rem;
+                top: 590rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    } 
+
+    &-cemetery {
+        margin-top: 15rem;
+        &__title {
+            font-size: 20px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 14rem;
+                top: 660rem;
+                font-size: 2.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    } 
+
+    &-Emilio {
+        margin-top: 15rem;
+        &__title {
+            font-size: 30px;
+            
+            & h2 {
+                color: $color-primary-main;
+                position: absolute;
+                left: 17rem;
+                top: 717rem;
+                font-size: 3.7rem;
+            }
+        }
+
+        &__img {
+              
+            & img {
+                height: 20rem;
+            }
+
+            &--text {
+                
+                & img {
+                    height: 10rem;
+                    float: left; 
+                    margin: 10px 20px 10px 0;
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+    } 
+}

@@ -804,15 +804,18 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 .menu {
   margin: auto;
   top: 30px;
-  margin-left: -14px;
-  position: fixed; }
+  margin-left: -23.5rem;
+  position: sticky;
+  font-size: 14px;
+  z-index: -2000; }
   .menu-nav {
     padding: 20px;
+    margin-top: 20px;
     height: 35rem;
     background: #0a0d36;
     -webkit-box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.98);
     box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.98);
-    width: 22rem; }
+    width: 20rem; }
     .menu-nav h2 {
       color: #dadada;
       padding-left: 2px;
@@ -869,5 +872,263 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     .menu-nav ul li p {
       position: relative;
       z-index: 10;
-      padding: 5px 12px;
+      padding: 6px 12px;
       color: #dadada; }
+
+.museos {
+  width: 55rem;
+  font-size: 20px;
+  text-align: justify;
+  position: absolute;
+  right: 4rem;
+  margin-left: 30rem; }
+  .museos h4 {
+    text-align: center; }
+  .museos h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center; }
+  .museos-intro {
+    margin-top: -35rem;
+    margin-bottom: 10rem; }
+    .museos-intro__title {
+      font-size: 2rem; }
+      .museos-intro__title h2 {
+        color: #D62323; }
+    .museos-intro a {
+      text-decoration: none; }
+  .museos-grandparents__title {
+    font-size: 30px; }
+    .museos-grandparents__title h2 {
+      color: #D62323;
+      position: absolute;
+      left: 17rem;
+      top: 29rem;
+      font-size: 3.7rem; }
+  .museos-grandparents__img img {
+    height: 20rem; }
+  .museos-grandparents__img--text img {
+    height: 10rem;
+    float: left;
+    margin: 10px 20px 10px 0; }
+  .museos-grandparents a {
+    text-decoration: none; }
+  .museos-religious {
+    margin-top: 15rem; }
+    .museos-religious__title {
+      font-size: 30px; }
+      .museos-religious__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 17rem;
+        top: 130rem;
+        font-size: 3.7rem; }
+    .museos-religious__img img {
+      height: 20rem; }
+    .museos-religious__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-religious a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-pablo {
+    margin-top: 15rem; }
+    .museos-pablo__title {
+      font-size: 30px; }
+      .museos-pablo__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 17rem;
+        top: 175rem;
+        font-size: 3.7rem; }
+    .museos-pablo__img img {
+      height: 20rem; }
+    .museos-pablo__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-pablo a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-corn {
+    margin-top: 15rem; }
+    .museos-corn__title {
+      font-size: 30px; }
+      .museos-corn__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 17rem;
+        top: 250rem;
+        font-size: 3.7rem; }
+    .museos-corn__img img {
+      height: 20rem; }
+    .museos-corn__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-corn a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-memory {
+    margin-top: 15rem; }
+    .museos-memory__title {
+      font-size: 30px; }
+      .museos-memory__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 17rem;
+        top: 305rem;
+        font-size: 3.7rem; }
+    .museos-memory__img img {
+      height: 20rem; }
+    .museos-memory__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-memory a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-culture {
+    margin-top: 15rem; }
+    .museos-culture__title {
+      font-size: 30px; }
+      .museos-culture__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 17rem;
+        top: 360rem;
+        font-size: 3.7rem; }
+    .museos-culture__img img {
+      height: 20rem; }
+    .museos-culture__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-culture a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-arqueologica {
+    margin-top: 15rem; }
+    .museos-arqueologica__title {
+      font-size: 30px; }
+      .museos-arqueologica__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 22rem;
+        top: 420rem;
+        font-size: 3.7rem; }
+    .museos-arqueologica__img img {
+      height: 20rem; }
+    .museos-arqueologica__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-arqueologica a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-press {
+    margin-top: 15rem; }
+    .museos-press__title {
+      font-size: 30px; }
+      .museos-press__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 17rem;
+        top: 482rem;
+        font-size: 3.7rem; }
+    .museos-press__img img {
+      height: 20rem; }
+    .museos-press__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-press a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-romulo {
+    margin-top: 15rem; }
+    .museos-romulo__title {
+      font-size: 30px; }
+      .museos-romulo__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 20rem;
+        top: 532rem;
+        font-size: 3.7rem; }
+    .museos-romulo__img img {
+      height: 20rem; }
+    .museos-romulo__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-romulo a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-pantagoras {
+    margin-top: 15rem; }
+    .museos-pantagoras__title {
+      font-size: 30px; }
+      .museos-pantagoras__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 13rem;
+        top: 590rem;
+        font-size: 3.7rem; }
+    .museos-pantagoras__img img {
+      height: 20rem; }
+    .museos-pantagoras__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-pantagoras a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-cemetery {
+    margin-top: 15rem; }
+    .museos-cemetery__title {
+      font-size: 20px; }
+      .museos-cemetery__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 14rem;
+        top: 660rem;
+        font-size: 2.7rem; }
+    .museos-cemetery__img img {
+      height: 20rem; }
+    .museos-cemetery__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-cemetery a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
+  .museos-Emilio {
+    margin-top: 15rem; }
+    .museos-Emilio__title {
+      font-size: 30px; }
+      .museos-Emilio__title h2 {
+        color: #D62323;
+        position: absolute;
+        left: 17rem;
+        top: 717rem;
+        font-size: 3.7rem; }
+    .museos-Emilio__img img {
+      height: 20rem; }
+    .museos-Emilio__img--text img {
+      height: 10rem;
+      float: left;
+      margin: 10px 20px 10px 0; }
+    .museos-Emilio a {
+      text-decoration: none;
+      font-size: 10px;
+      text-align: center; }
