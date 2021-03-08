@@ -7,6 +7,7 @@
     position: absolute;
     right: 4rem;
     margin-left: 30rem;
+    
 
 
     & h4 {
@@ -16,6 +17,7 @@
      & h2 {
         font-family: 'Lobster', cursive;
          text-align: center;
+         text-shadow: 2px 3px 4px #000000;
      }
 
     &-intro {
@@ -35,6 +37,7 @@
     }
     
     &-grandparents {
+        
         &__title {
             font-size: 30px;
             
@@ -51,14 +54,21 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
+                }
+
+                & img:hover {
+                    transform:scale(3);
                 }
                 
             }
@@ -89,14 +99,21 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
+                }
+
+                & img:hover {
+                    transform:scale(3);
                 }
                 
             }
@@ -128,15 +145,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -166,15 +191,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -204,15 +237,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -242,15 +283,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -280,15 +329,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -318,15 +375,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -356,15 +421,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -394,15 +467,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -432,15 +513,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 
@@ -470,15 +559,23 @@
               
             & img {
                 height: 20rem;
+                -webkit-box-shadow: 5px 5px 14px 2px #000000; 
+                box-shadow: 5px 5px 14px 2px #000000;
             }
 
             &--text {
-                
+               
                 & img {
                     height: 10rem;
                     float: left; 
                     margin: 10px 20px 10px 0;
+                    transition: all .5s;
                 }
+
+                & img:hover {
+                    transform:scale(3);
+                }
+                
             }
         }
 

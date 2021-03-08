@@ -627,7 +627,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   background-image: linear-gradient(290deg, #7d8489 0, #526571 25%, #1f4459 50%, #002642 75%, #00082e 100%);
   padding: 3rem 0;
   font-size: 1.4rem;
-  color: #f7f7f7; }
+  color: #f7f7f7;
+  position: absolute;
+  top: 820rem;
+  width: 93%; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 2rem; }
@@ -815,7 +818,8 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     background: #0a0d36;
     -webkit-box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.98);
     box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.98);
-    width: 20rem; }
+    width: 20rem;
+    border-radius: 6px; }
     .menu-nav h2 {
       color: #dadada;
       padding-left: 2px;
@@ -886,7 +890,8 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     text-align: center; }
   .museos h2 {
     font-family: 'Lobster', cursive;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 2px 3px 4px #000000; }
   .museos-intro {
     margin-top: -35rem;
     margin-bottom: 10rem; }
@@ -905,11 +910,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       top: 29rem;
       font-size: 3.7rem; }
   .museos-grandparents__img img {
-    height: 20rem; }
+    height: 20rem;
+    -webkit-box-shadow: 5px 5px 14px 2px #000000;
+    box-shadow: 5px 5px 14px 2px #000000; }
   .museos-grandparents__img--text img {
     height: 10rem;
     float: left;
-    margin: 10px 20px 10px 0; }
+    margin: 10px 20px 10px 0;
+    transition: all .5s; }
+  .museos-grandparents__img--text img:hover {
+    transform: scale(3); }
   .museos-grandparents a {
     text-decoration: none; }
   .museos-religious {
@@ -923,11 +933,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 130rem;
         font-size: 3.7rem; }
     .museos-religious__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-religious__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-religious__img--text img:hover {
+      transform: scale(3); }
     .museos-religious a {
       text-decoration: none;
       font-size: 10px;
@@ -943,11 +958,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 175rem;
         font-size: 3.7rem; }
     .museos-pablo__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-pablo__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-pablo__img--text img:hover {
+      transform: scale(3); }
     .museos-pablo a {
       text-decoration: none;
       font-size: 10px;
@@ -963,11 +983,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 250rem;
         font-size: 3.7rem; }
     .museos-corn__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-corn__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-corn__img--text img:hover {
+      transform: scale(3); }
     .museos-corn a {
       text-decoration: none;
       font-size: 10px;
@@ -983,11 +1008,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 305rem;
         font-size: 3.7rem; }
     .museos-memory__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-memory__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-memory__img--text img:hover {
+      transform: scale(3); }
     .museos-memory a {
       text-decoration: none;
       font-size: 10px;
@@ -1003,11 +1033,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 360rem;
         font-size: 3.7rem; }
     .museos-culture__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-culture__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-culture__img--text img:hover {
+      transform: scale(3); }
     .museos-culture a {
       text-decoration: none;
       font-size: 10px;
@@ -1023,11 +1058,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 420rem;
         font-size: 3.7rem; }
     .museos-arqueologica__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-arqueologica__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-arqueologica__img--text img:hover {
+      transform: scale(3); }
     .museos-arqueologica a {
       text-decoration: none;
       font-size: 10px;
@@ -1043,11 +1083,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 482rem;
         font-size: 3.7rem; }
     .museos-press__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-press__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-press__img--text img:hover {
+      transform: scale(3); }
     .museos-press a {
       text-decoration: none;
       font-size: 10px;
@@ -1063,11 +1108,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 532rem;
         font-size: 3.7rem; }
     .museos-romulo__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-romulo__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-romulo__img--text img:hover {
+      transform: scale(3); }
     .museos-romulo a {
       text-decoration: none;
       font-size: 10px;
@@ -1083,11 +1133,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 590rem;
         font-size: 3.7rem; }
     .museos-pantagoras__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-pantagoras__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-pantagoras__img--text img:hover {
+      transform: scale(3); }
     .museos-pantagoras a {
       text-decoration: none;
       font-size: 10px;
@@ -1103,11 +1158,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 660rem;
         font-size: 2.7rem; }
     .museos-cemetery__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-cemetery__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-cemetery__img--text img:hover {
+      transform: scale(3); }
     .museos-cemetery a {
       text-decoration: none;
       font-size: 10px;
@@ -1123,11 +1183,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         top: 717rem;
         font-size: 3.7rem; }
     .museos-Emilio__img img {
-      height: 20rem; }
+      height: 20rem;
+      -webkit-box-shadow: 5px 5px 14px 2px #000000;
+      box-shadow: 5px 5px 14px 2px #000000; }
     .museos-Emilio__img--text img {
       height: 10rem;
       float: left;
-      margin: 10px 20px 10px 0; }
+      margin: 10px 20px 10px 0;
+      transition: all .5s; }
+    .museos-Emilio__img--text img:hover {
+      transform: scale(3); }
     .museos-Emilio a {
       text-decoration: none;
       font-size: 10px;
