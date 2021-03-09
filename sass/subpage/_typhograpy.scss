@@ -12,6 +12,7 @@
 
     & h4 {
         text-align: center;
+        font-size: 20px;
     }
 
      & h2 {
@@ -53,6 +54,7 @@
         &__img {
               
             & img {
+                margin-bottom: 2rem;
                 height: 20rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
@@ -82,6 +84,11 @@
     }
 
     &-religious {
+        
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -89,16 +96,17 @@
             & h2 {
                 color: $color-primary-main;
                 position: absolute;
-                left: 17rem;
-                top: 130rem;
+                left: 21rem;
+                top: 135rem;
                 font-size: 3.7rem;
             }
         }
 
         &__img {
-              
+            margin-bottom: 2rem;
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
             }
@@ -128,6 +136,10 @@
     }
 
     &-pablo {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -135,8 +147,8 @@
             & h2 {
                 color: $color-primary-main;
                 position: absolute;
-                left: 17rem;
-                top: 175rem;
+                left: 21rem;
+                top: 180rem;
                 font-size: 3.7rem;
             }
         }
@@ -145,8 +157,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -170,10 +184,13 @@
             font-size: 10px;
             text-align: center;
         }
-        
     }    
 
     &-corn {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -181,8 +198,8 @@
             & h2 {
                 color: $color-primary-main;
                 position: absolute;
-                left: 17rem;
-                top: 250rem;
+                left: 21rem;
+                top: 260rem;
                 font-size: 3.7rem;
             }
         }
@@ -191,8 +208,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -216,10 +235,13 @@
             font-size: 10px;
             text-align: center;
         }
-        
     } 
 
     &-memory {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -227,8 +249,8 @@
             & h2 {
                 color: $color-primary-main;
                 position: absolute;
-                left: 17rem;
-                top: 305rem;
+                left: 21rem;
+                top: 315rem;
                 font-size: 3.7rem;
             }
         }
@@ -237,8 +259,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -266,6 +290,10 @@
     } 
 
     &-culture {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -273,8 +301,8 @@
             & h2 {
                 color: $color-primary-main;
                 position: absolute;
-                left: 17rem;
-                top: 360rem;
+                left: 18rem;
+                top: 372rem;
                 font-size: 3.7rem;
             }
         }
@@ -283,8 +311,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -312,6 +342,10 @@
     }
     
     &-arqueologica {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -319,8 +353,8 @@
             & h2 {
                 color: $color-primary-main;
                 position: absolute;
-                left: 22rem;
-                top: 420rem;
+                left: 25rem;
+                top: 440rem;
                 font-size: 3.7rem;
             }
         }
@@ -329,8 +363,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -354,10 +390,13 @@
             font-size: 10px;
             text-align: center;
         }
-        
     } 
 
     &-press {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -366,7 +405,7 @@
                 color: $color-primary-main;
                 position: absolute;
                 left: 17rem;
-                top: 482rem;
+                top: 500rem;
                 font-size: 3.7rem;
             }
         }
@@ -375,8 +414,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -400,10 +441,13 @@
             font-size: 10px;
             text-align: center;
         }
-        
     } 
 
     &-romulo {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -412,7 +456,7 @@
                 color: $color-primary-main;
                 position: absolute;
                 left: 20rem;
-                top: 532rem;
+                top: 554rem;
                 font-size: 3.7rem;
             }
         }
@@ -421,8 +465,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -450,6 +496,10 @@
     } 
 
     &-pantagoras {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -457,9 +507,9 @@
             & h2 {
                 color: $color-primary-main;
                 position: absolute;
-                left: 13rem;
-                top: 590rem;
-                font-size: 3.7rem;
+                left: 20rem;
+                top: 610rem;
+                font-size: 3rem;
             }
         }
 
@@ -467,8 +517,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -496,16 +548,20 @@
     } 
 
     &-cemetery {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
-            font-size: 20px;
+            font-size: 30px;
             
             & h2 {
                 color: $color-primary-main;
                 position: absolute;
-                left: 14rem;
-                top: 660rem;
-                font-size: 2.7rem;
+                left: 17rem;
+                top: 680rem;
+                font-size: 3.7rem;
             }
         }
 
@@ -513,8 +569,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -542,6 +600,10 @@
     } 
 
     &-Emilio {
+        & p {
+            font-size: 20px;
+            text-align: justify;
+        }
         margin-top: 15rem;
         &__title {
             font-size: 30px;
@@ -550,7 +612,7 @@
                 color: $color-primary-main;
                 position: absolute;
                 left: 17rem;
-                top: 717rem;
+                top: 740rem;
                 font-size: 3.7rem;
             }
         }
@@ -559,8 +621,10 @@
               
             & img {
                 height: 20rem;
+                margin-left: -41rem;
                 -webkit-box-shadow: 5px 5px 14px 2px #000000; 
                 box-shadow: 5px 5px 14px 2px #000000;
+                margin-bottom: 2rem;
             }
 
             &--text {
@@ -585,5 +649,14 @@
             text-align: center;
         }
         
-    } 
+    }
+}
+
+
+//footer
+.uno {
+        margin-top: 23rem;
+        position: absolute;
+        top: 820rem
+    
 }
