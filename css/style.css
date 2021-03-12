@@ -1262,3 +1262,80 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .subb {
   text-align: center; }
+
+.photo {
+  display: flex;
+  justify-content: center;
+  margin-left: 5rem;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  width: 1100px; }
+
+.photo .card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 20px;
+  transform-style: preserve-3d;
+  perspective: 1000px; }
+
+.photo .card .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 1s ease; }
+
+.photo .card:hover .box {
+  transform: rotateY(180deg); }
+
+.photo .card .box .imgbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 4px 7px 5px -1px rgba(0, 0, 0, 0.65);
+  box-shadow: 4px 7px 5px -1px rgba(0, 0, 0, 0.65); }
+
+.photo .card .box .imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.photo .card .box .contentbx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg); }
+
+.photo .card .box .contentbx div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: linear-gradient(45deg, #fe0061, #ffeb3b);
+  transform: translateZ(100px);
+  -webkit-box-shadow: 0px 7px 14px 5px rgba(0, 0, 0, 0.72);
+  box-shadow: 0px 7px 14px 5px rgba(0, 0, 0, 0.72); }
+
+.photo .card .box .contentbx div h2 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px; }
+
+.photo .card .box .contentbx div p {
+  color: #fff;
+  font-size: 16px; }
