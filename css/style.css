@@ -278,7 +278,8 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     position: absolute;
     z-index: 10;
     transition: all .2s;
-    outline-offset: 1rem; }
+    outline-offset: 1rem;
+    margin-top: 10rem; }
     .composition__photo--p1 {
       left: 0;
       top: 1rem; }
