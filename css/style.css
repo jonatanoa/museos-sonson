@@ -600,6 +600,11 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     flex-direction: column;
     /*pone el texto en columna*/ }
 
+.header-logo-box {
+  transition: all .2s; }
+  .header-logo-box:hover {
+    transform: scale(1.5); }
+
 .row {
   max-width: 66rem;
   margin: 0 auto; }
@@ -664,6 +669,11 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     padding-top: 1rem;
     display: inline-block;
     text-align: center; }
+
+.footer__logo-box {
+  transition: all .2s; }
+  .footer__logo-box:hover {
+    transform: scale(1.3); }
 
 .navigation__checkbox {
   display: none; }

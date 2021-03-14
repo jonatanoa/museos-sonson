@@ -67,3 +67,12 @@
 		/*pone el texto en columna*/
 	}
 }
+
+.header-logo-box {
+	transition: all .2s;
+
+	&:hover {
+		transform: scale(1.5);
+	}
+}
+

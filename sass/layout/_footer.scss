@@ -63,3 +63,11 @@
         text-align: center;
     }
 }
+
+.footer__logo-box {
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
