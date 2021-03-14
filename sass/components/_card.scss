@@ -11,7 +11,7 @@
     font-size: 2rem;
 
     height: 28rem;
-    transition: all .8s ease; //ease es el temporisador de transicion y se pone oara que la transicion sea mas suave
+    transition: all .8s cubic-bezier(1, -0.43, 0.46, 0.6); //ease es el temporisador de transicion y se pone oara que la transicion sea mas suave
     position: absolute;
     top: 0;
     left: 0;

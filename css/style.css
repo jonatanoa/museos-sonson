@@ -335,7 +335,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     color: #fff;
     font-size: 2rem;
     height: 28rem;
-    transition: all .8s ease;
+    transition: all 0.8s cubic-bezier(1, -0.43, 0.46, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -1297,20 +1297,28 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         text-align: center;
         color: #001293;
         font-size: 25px;
+        -webkit-transition: all .4s ease;
+        -o-transition: all .4s ease;
         transition: all .4s ease; }
       .historias-titulo1__parrafo--h3:hover {
         color: #3fdb3c;
+        -webkit-transform: rotate(4deg) scale(1.3);
+        -ms-transform: rotate(4deg) scale(1.3);
         transform: rotate(4deg) scale(1.3); }
   .historias-imgs {
     height: 25rem;
     float: left;
     margin: 2rem 2rem 2rem 0;
-    transition: all .4s ease; }
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    padding: 2rem; }
   .historias-imgs:hover {
     padding: .5rem;
     outline: 0.5rem solid #158f03;
-    transform: translateX(15rem) scale(1.5);
-    display: flex; }
+    -webkit-transform: translateX(15rem) scale(1.5);
+    -ms-transform: translateX(15rem) scale(1.5);
+    transform: translateX(15rem) scale(1.5); }
 
 .photo {
   display: flex;
