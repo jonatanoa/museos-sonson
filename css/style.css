@@ -1311,8 +1311,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     margin: 2rem 2rem 2rem 0;
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
-    transition: all .5s ease;
-    padding: 2rem; }
+    transition: all .5s ease; }
   .historias-imgs:hover {
     padding: .5rem;
     outline: 0.5rem solid #158f03;
