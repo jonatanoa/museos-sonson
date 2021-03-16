@@ -5,12 +5,28 @@
 	box-sizing: border-box;
 }
 
-// html{
-// 	@include respont-phone {
-// 		font-size: 50%;
-// 	}
-// }
+html {
+	font-size: 100%;
+	// @include respond-phone {
+	// 	font-size: 50%;
+	// }
+	@include respond(phone) {
+		font-size: 50%;
+	}
+
+	@include respond(tab-land) {
+		font-size: 70%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 60%;
+	}
+
+	@include respond(big-dektop) {
+		font-size: 80%;
+	}
+}
 
 body {
-	padding: 30px;
+	padding: 1.87rem;
 }

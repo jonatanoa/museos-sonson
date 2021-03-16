@@ -12,7 +12,7 @@
         right: 2rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 10px 20px rgba($color-black, .50);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 50%);
         text-align: center;
         cursor: pointer;
 
@@ -29,7 +29,8 @@
         // background-image: radial-gradient($color-green-ligth, $color-green-dark-1);
         backdrop-filter: blur(.1px); //glass
         z-index: 1000;
-        box-shadow: 0 10px 20px rgba($color-black,1);
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
         transition: transform .8s  cubic-bezier(0.65, 0, 0.35, 1);
         
 
@@ -101,7 +102,7 @@
     //icono de menu
     &__icon {
         position: relative;
-        margin-top: 35px;
+        margin-top: 2.18rem;
 
         &, //crea la linea del medio
         &::before,

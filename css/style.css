@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/*
+0-600px:  phone
+600-900px: tablet portrait
+900-1200px: tabled landscape
+[1200-1800p]: este es el medio donde estamos trabajando
+1800px +: big desktop
+
+$breakpoint arguement choises:
+-phone
+-tab-port
+-tab-land
+-big-dektop
+*/
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -83,8 +96,23 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 100%; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 70%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
+
 body {
-  padding: 30px; }
+  padding: 1.87rem; }
 
 .heading-primary-main {
   color: #D62323;
@@ -121,7 +149,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   /*animation-delay: 2s; este sirve para retrasar el efecto*/
-  margin-bottom: 60px; }
+  margin-bottom: 3.75rem; }
 
 .heading-secondary {
   font-family: 'Petit Formal Script', cursive;
@@ -181,7 +209,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   text-decoration: none;
   padding: 15px 40px;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   transition: all 0.2s;
   position: relative; }
 
@@ -243,7 +271,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 .btn-2:link, .btn-2:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 15px 2.5rem;
   display: inline-block;
   border-radius: 20px;
   transition: all 0.2s;
@@ -253,7 +281,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .btn-2:hover {
   transform: translateY(-3px) skewy(7deg);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 10px 1.25rem rgba(0, 0, 0, 0.4); }
   .btn-2:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: -5; }
@@ -300,7 +328,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 .feature-box__img {
   position: absolute;
   top: -5rem;
-  right: 567px;
+  right: 35.43rem;
   width: 13rem;
   margin: -12em;
   padding: 1.5rem;
@@ -404,19 +432,19 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       background-image: linear-gradient(to right bottom, rgba(0, 103, 108, 0.85), rgba(23, 232, 249, 0.85)); }
   .card__details {
-    padding: 38px;
+    padding: 2.37rem;
     font-size: 20px;
     text-align: center;
     justify-content: center;
     color: #555555; }
     .card__details-uno {
       font-size: 16px;
-      padding: 38px;
+      padding: 2.37rem;
       text-align: center;
       justify-content: center;
       color: #555555; }
       .card__details-uno--1 {
-        font-size: 16px;
+        font-size: 1rem;
         padding: 3px;
         margin: 13px;
         text-align: center;
@@ -426,7 +454,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
           text-decoration: none; }
     .card__details-dos {
       font-size: 18px;
-      padding: 38px;
+      padding: 2.37rem;
       text-align: center;
       justify-content: center;
       color: #555555; }
@@ -441,12 +469,12 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
           text-decoration: none; }
     .card__details-tres {
       font-size: 18px;
-      padding: 38px;
+      padding: 2.37rem;
       text-align: center;
       justify-content: center;
       color: #555555; }
       .card__details-tres--3 {
-        font-size: 16px;
+        font-size: 1rem;
         padding: 3px;
         margin: 13px;
         text-align: center;
@@ -516,9 +544,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     transform: translateX(-1rem) translatey(0.6rem) scale(1);
     filter: blur(3px) brightness(80%); }
   .data__texto-1 {
-    font-size: 21px; }
+    font-size: 1.31rem; }
   .data__texto-2 {
-    font-size: 19px; }
+    font-size: 1.18rem; }
     .data__texto-2 a {
       text-decoration: none; }
 
@@ -687,7 +715,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   right: 2rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px black;
   text-align: center;
   cursor: pointer; }
 
@@ -700,7 +728,8 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   right: 2.5rem;
   backdrop-filter: blur(0.1px);
   z-index: 1000;
-  box-shadow: 0 10px 20px black;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
   transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); }
 
 .navigation__nav {
@@ -754,7 +783,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .navigation__icon {
   position: relative;
-  margin-top: 35px; }
+  margin-top: 2.18rem; }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 2rem;
     height: 3px;
@@ -1292,11 +1321,11 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     font-family: 'Lobster', cursive; }
     .historias-titulo1__parrafo {
       text-align: justify;
-      font-size: 20px; }
+      font-size: 1.25rem; }
       .historias-titulo1__parrafo--h3 {
         text-align: center;
         color: #001293;
-        font-size: 25px;
+        font-size: 1.56rem;
         -webkit-transition: all .4s ease;
         -o-transition: all .4s ease;
         transition: all .4s ease; }
