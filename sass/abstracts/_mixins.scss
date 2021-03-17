@@ -21,7 +21,12 @@ $breakpoint arguement choises:
 -tab-port
 -tab-land
 -big-dektop
+
+
+ORDER: Base + typography > general layout +grid > page layout > components
+
 */
+
 @mixin respond ($breakpoint) { //respond es un nombre de identificacion que se le da a mixin,  puede llevar calquier nombre
     @if $breakpoint == phone {  //phone es otro nombre que se la da a $breakpoint
         @media (max-width: 37.5em) { @content }; //600px

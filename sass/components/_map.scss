@@ -1,13 +1,29 @@
+
+.mapat {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    
+}
+
 .map-caracteristicas {
-    height: 100rem;
+    
+    height: 70rem;
     background-image: linear-gradient(150deg, #ffffe1 0, #ffffda 8.33%, #ffffd2 16.67%, #fdffca 25%, #eefcc3 33.33%, #ddf7bc 41.67%, #c9f2b5 50%, #b4edb0 58.33%, #9ee8af 66.67%, #86e4b0 75%, #6de0b3 83.33%, #50dcb9 91.67%, #26d9c0 100%);
-
     &__maps {
+       display: flex;
+       justify-content: center;
+     
+	}
+    
 
-        margin: 15rem;
-        margin-top: 4rem;
-        -webkit-box-shadow: 6px 5px 17px 5px rgba(0,0,0,0.58); 
-        box-shadow: 6px 5px 17px 5px rgba(0,0,0,0.58);
+    @include respond (tab-port) {
+		height: 85rem;
 
-    }
+	}
+				//como el phone es mas pequrño viene despues de tab-port
+
+    
+
 }

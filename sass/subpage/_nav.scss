@@ -2,21 +2,21 @@
 
 .menu {
     margin: auto;
-    top: 30px;
+    top: 1.87rem;
     margin-left: -23.5rem;
     position: sticky;
     font-size: 14px;
     z-index: -2000;
-    
+   
     
     
     &-nav {
-        padding: 20px;
-        margin-top: 20px;
+        padding: 1.25rem;
+        margin-top: 1.25rem;
         height: 35rem;
         background: $color-blue-dark-2;
-        -webkit-box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.98); 
-        box-shadow: 6px 9px 16px 1px rgba(0,0,0,0.98);
+        -webkit-box-shadow: 6px 9px 1rem 1px rgba(0,0,0,0.98); 
+        box-shadow: 6px 9px 1rem 1px rgba(0,0,0,0.98);
         width: 20rem;
         border-radius: 6px;
         
@@ -25,7 +25,7 @@
         & h2 {
             color: #dadada;
             padding-left: 2px;
-            margin-left: 50px;
+            margin-left: 3.12rem;
             margin-bottom: 10px;
             display: inline-block;
             font-weight: 500;
@@ -43,7 +43,7 @@
             text-decoration: none;
             display: table;
             margin: 10px 0;
-            padding-left: 34px;
+            padding-left: 2.12rem;
             padding-right: 5px;
         }
 
@@ -53,10 +53,10 @@
             position: absolute;
             top: -6px;
             left: 0;
-            width: 33px;
-            height: 33px;
+            width: 2.06rem;
+            height: 2.06rem;
             background: transparent;
-            border-radius: 34px;
+            border-radius: 2.12rem;
             transition: background 0.5s, width 0.5s;
             transition-delay: 0.5s, 0s; // este en el hover hace que el efecto se quede un momento en el circulo y despues se alargue
             border: 2px solid #03a9f4;
@@ -82,7 +82,7 @@
             transition-delay: 0s;
         }
         & ul li:hover::after {
-            left: 24px; //para que la flecha se vaya a la derecha
+            left: 1.5rem; //para que la flecha se vaya a la derecha
             transition-delay: 0.5s;
             transform: rotate(45deg) scale(2); //para que la flecha escale
         }

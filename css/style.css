@@ -11,6 +11,10 @@ $breakpoint arguement choises:
 -tab-port
 -tab-land
 -big-dektop
+
+
+ORDER: Base + typography > general layout +grid > page layout > components
+
 */
 @-webkit-keyframes moveInLeft {
   0% {
@@ -112,7 +116,11 @@ html {
       font-size: 80%; } }
 
 body {
-  padding: 1.87rem; }
+  padding: 1.87rem;
+  box-sizing: border-box; }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 10px; } }
 
 .heading-primary-main {
   color: #D62323;
@@ -137,6 +145,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   animation-duration: 5s;
   /*animation-delay: 2s; este sirve para retrasar el efecto*/
   /*animation-iteration-count: este sirve para repetir la animacion*/ }
+  @media (max-width: 37.5em) {
+    .heading-primary-main {
+      letter-spacing: 1rem;
+      font-family: 5rem; } }
 
 .heading-primary-sub {
   display: block;
@@ -150,6 +162,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   animation-duration: 5s;
   /*animation-delay: 2s; este sirve para retrasar el efecto*/
   margin-bottom: 3.75rem; }
+  @media (max-width: 37.5em) {
+    .heading-primary-sub {
+      letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-family: 'Petit Formal Script', cursive;
@@ -162,6 +177,12 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   background-clip: text;
   color: transparent;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(9deg) scale(1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -564,14 +585,20 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     width: 100%;
     object-fit: cover; }
 
+.mapat {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
 .map-caracteristicas {
-  height: 100rem;
+  height: 70rem;
   background-image: linear-gradient(150deg, #ffffe1 0, #ffffda 8.33%, #ffffd2 16.67%, #fdffca 25%, #eefcc3 33.33%, #ddf7bc 41.67%, #c9f2b5 50%, #b4edb0 58.33%, #9ee8af 66.67%, #86e4b0 75%, #6de0b3 83.33%, #50dcb9 91.67%, #26d9c0 100%); }
   .map-caracteristicas__maps {
-    margin: 15rem;
-    margin-top: 4rem;
-    -webkit-box-shadow: 6px 5px 17px 5px rgba(0, 0, 0, 0.58);
-    box-shadow: 6px 5px 17px 5px rgba(0, 0, 0, 0.58); }
+    display: flex;
+    justify-content: center; }
+  @media (max-width: 56.25em) {
+    .map-caracteristicas {
+      height: 85rem; } }
 
 .header {
   height: 95vh;
@@ -659,11 +686,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .footer {
   background-image: linear-gradient(290deg, #7d8489 0, #526571 25%, #1f4459 50%, #002642 75%, #00082e 100%);
-  padding: 3rem 0;
+  padding: 3rem;
   font-size: 1.4rem;
-  color: #f7f7f7;
-  position: absolute;
-  width: 95.5%; }
+  color: #f7f7f7; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 2rem; }
@@ -845,24 +870,24 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .menu {
   margin: auto;
-  top: 30px;
+  top: 1.87rem;
   margin-left: -23.5rem;
   position: sticky;
   font-size: 14px;
   z-index: -2000; }
   .menu-nav {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
     height: 35rem;
     background: #0a0d36;
-    -webkit-box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.98);
-    box-shadow: 6px 9px 16px 1px rgba(0, 0, 0, 0.98);
+    -webkit-box-shadow: 6px 9px 1rem 1px rgba(0, 0, 0, 0.98);
+    box-shadow: 6px 9px 1rem 1px rgba(0, 0, 0, 0.98);
     width: 20rem;
     border-radius: 6px; }
     .menu-nav h2 {
       color: #dadada;
       padding-left: 2px;
-      margin-left: 50px;
+      margin-left: 3.12rem;
       margin-bottom: 10px;
       display: inline-block;
       font-weight: 500;
@@ -876,17 +901,17 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       text-decoration: none;
       display: table;
       margin: 10px 0;
-      padding-left: 34px;
+      padding-left: 2.12rem;
       padding-right: 5px; }
     .menu-nav ul li::before {
       content: "";
       position: absolute;
       top: -6px;
       left: 0;
-      width: 33px;
-      height: 33px;
+      width: 2.06rem;
+      height: 2.06rem;
       background: transparent;
-      border-radius: 34px;
+      border-radius: 2.12rem;
       transition: background 0.5s, width 0.5s;
       transition-delay: 0.5s, 0s;
       border: 2px solid #03a9f4; }
@@ -907,7 +932,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       transition: .5s;
       transition-delay: 0s; }
     .menu-nav ul li:hover::after {
-      left: 24px;
+      left: 1.5rem;
       transition-delay: 0.5s;
       transform: rotate(45deg) scale(2); }
     .menu-nav a {
@@ -920,14 +945,14 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .museos {
   width: 55rem;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: justify;
   position: absolute;
   right: 4rem;
   margin-left: 30rem; }
   .museos h4 {
     text-align: center;
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .museos h2 {
     font-family: 'Lobster', cursive;
     text-align: center;
@@ -942,7 +967,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     .museos-intro a {
       text-decoration: none; }
   .museos-grandparents__title {
-    font-size: 30px; }
+    font-size: 1.87rem; }
     .museos-grandparents__title h2 {
       color: #D62323;
       position: absolute;
@@ -957,7 +982,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-grandparents__img--text img {
     height: 10rem;
     float: left;
-    margin: 10px 20px 10px 0;
+    margin: 10px 1.25rem 10px 0;
     transition: all .5s; }
   .museos-grandparents__img--text img:hover {
     transform: scale(3); }
@@ -966,10 +991,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-religious {
     margin-top: 15rem; }
     .museos-religious p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-religious__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-religious__title h2 {
         color: #D62323;
         position: absolute;
@@ -997,10 +1022,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-pablo {
     margin-top: 15rem; }
     .museos-pablo p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-pablo__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-pablo__title h2 {
         color: #D62323;
         position: absolute;
@@ -1027,10 +1052,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-corn {
     margin-top: 15rem; }
     .museos-corn p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-corn__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-corn__title h2 {
         color: #D62323;
         position: absolute;
@@ -1057,10 +1082,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-memory {
     margin-top: 15rem; }
     .museos-memory p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-memory__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-memory__title h2 {
         color: #D62323;
         position: absolute;
@@ -1087,10 +1112,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-culture {
     margin-top: 15rem; }
     .museos-culture p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-culture__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-culture__title h2 {
         color: #D62323;
         position: absolute;
@@ -1117,10 +1142,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-arqueologica {
     margin-top: 15rem; }
     .museos-arqueologica p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-arqueologica__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-arqueologica__title h2 {
         color: #D62323;
         position: absolute;
@@ -1147,10 +1172,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-press {
     margin-top: 15rem; }
     .museos-press p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-press__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-press__title h2 {
         color: #D62323;
         position: absolute;
@@ -1177,10 +1202,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-romulo {
     margin-top: 15rem; }
     .museos-romulo p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-romulo__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-romulo__title h2 {
         color: #D62323;
         position: absolute;
@@ -1207,10 +1232,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-pantagoras {
     margin-top: 15rem; }
     .museos-pantagoras p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-pantagoras__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-pantagoras__title h2 {
         color: #D62323;
         position: absolute;
@@ -1237,10 +1262,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-cemetery {
     margin-top: 15rem; }
     .museos-cemetery p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-cemetery__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-cemetery__title h2 {
         color: #D62323;
         position: absolute;
@@ -1267,10 +1292,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .museos-Emilio {
     margin-top: 15rem; }
     .museos-Emilio p {
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: justify; }
     .museos-Emilio__title {
-      font-size: 30px; }
+      font-size: 1.87rem; }
       .museos-Emilio__title h2 {
         color: #D62323;
         position: absolute;
@@ -1298,7 +1323,8 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 .uno {
   margin-top: 23rem;
   position: absolute;
-  top: 820rem; }
+  top: 820rem;
+  width: 95.5%; }
 
 .subb {
   text-align: center; }
@@ -1356,15 +1382,15 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   min-height: 100vh;
   flex-wrap: wrap;
   transform-style: preserve-3d;
-  width: 1100px; }
+  width: 68.75rem; }
 
 .photo .card {
   position: relative;
-  width: 320px;
-  height: 320px;
-  margin: 20px;
+  width: 20rem;
+  height: 20rem;
+  margin: 1.25rem;
   transform-style: preserve-3d;
-  perspective: 1000px; }
+  perspective: 62.5rem; }
 
 .photo .card .box {
   position: absolute;
@@ -1373,7 +1399,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: 1s ease; }
+  transition: 1s cubic-bezier(0.63, -0.51, 0.25, 1); }
 
 .photo .card:hover .box {
   transform: rotateY(180deg); }
@@ -1410,7 +1436,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .photo .card .box .contentbx div {
   transform-style: preserve-3d;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: rgba(0, 0, 21, 0.8);
   background: rgba(0, 0, 21, 0.8);
   color: rgba(0, 0, 21, 0.8);
@@ -1420,11 +1446,11 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .photo .card .box .contentbx div h2 {
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 1px;
   text-align: center; }
 
 .photo .card .box .contentbx div p {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center; }

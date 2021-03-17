@@ -21,6 +21,11 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 	/*animation-delay: 2s; este sirve para retrasar el efecto*/
 	/*animation-iteration-count: este sirve para repetir la animacion*/
 
+	@include respond (phone) {
+		letter-spacing: 1rem;
+		font-family: 5rem;
+	}
+
 }
 
 
@@ -36,6 +41,11 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 	animation-duration: 5s;
 	/*animation-delay: 2s; este sirve para retrasar el efecto*/	
 	margin-bottom: 3.75rem;
+
+	@include respond (phone) {
+		letter-spacing: .5rem;
+		
+	}
 }
 
 
@@ -51,6 +61,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 	color: transparent; //hay que establecer transparencia en el texto para que el gradier funcione.
 	transition: all .3s;
 
+	@include respond (tab-port) {
+		font-size: 2.5rem;
+
+	}
+				//como el phone es mas pequrño viene despues de tab-port
+	@include respond (phone) {
+		font-size: 2rem;
+
+	}
+
 	&:hover {
 		transform: skewY(2deg) skewX(9deg) scale(1);
 		text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
@@ -64,6 +84,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 	color: $color-grey-dark-2;
 	font-weight: 700;
 	text-transform: uppercase;
+	
 }
 
 .paragraph{
