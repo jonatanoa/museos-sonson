@@ -434,16 +434,16 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     top: 8rem;
     right: 1rem;
     width: 70%; }
-    @media (max-width: 56.25em) {
-      .card__header {
-        font-size: 2rem; } }
-    @media (max-width: 37.5em) {
-      .card__header {
-        font-size: 1.5rem; } }
   .card__header-span {
     padding: 2px 12px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
+    @media (max-width: 56.25em) {
+      .card__header-span {
+        font-size: 2rem; } }
+    @media (max-width: 37.5em) {
+      .card__header-span {
+        font-size: 1.5rem; } }
     .card__header-span--1 {
       -webkit-box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
