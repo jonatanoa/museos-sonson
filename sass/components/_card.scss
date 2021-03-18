@@ -113,6 +113,7 @@
         padding: 2px 12px;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
+        
         @include respond (tab-port) {
             font-size: 2rem;
     
@@ -122,6 +123,8 @@
             font-size: 1.5rem;
     
         }
+        
+
         &--1{
             -webkit-box-shadow: 11px 11px 31px 1px rgba(0,0,0,0.75); 
             box-shadow: 11px 11px 31px 1px rgba(0,0,0,0.75);
@@ -138,6 +141,17 @@
             background-image: linear-gradient(to right bottom, 
             rgba($color-tertiary-light, .85), 
             rgba($color-blue-dark, .85));
+
+
+            @include respond (tab-port) {
+                font-size: 1rem;
+        
+            }
+                        //como el phone es mas pequrño viene despues de tab-port
+            @include respond (phone) {
+                font-size: .90rem;
+        
+            }
         }
 
         &--3{
@@ -157,6 +171,8 @@
         text-align: center;
         justify-content: center;
         color: $color-grey-dark-2;
+
+     
         
 
         &-uno {
@@ -165,6 +181,23 @@
             text-align: center;
             justify-content: center;
             color: $color-grey-dark-2;
+
+        @include respond (tab-land) {
+                font-size: 11px;
+        }
+               
+        @include respond (tab-port) {
+            font-size: 10px;
+    
+        }
+                    //como el phone es mas pequrño viene despues de tab-port
+        @include respond (phone) {
+            font-size: 9px
+    
+        }
+
+      
+            
 
             &--1 {
                 font-size: 1rem;
@@ -177,6 +210,21 @@
                 a {
                     text-decoration: none;
                 }
+
+                }
+                @include respond (tab-land) {
+                    font-size: 10px;
+                }
+
+                @include respond (tab-port) {
+                    font-size: 9px;
+            
+                }
+                            //como el phone es mas pequrño viene despues de tab-port
+                @include respond (phone) {
+                    font-size: 8px
+            
+               
             }
         }
 
@@ -186,6 +234,21 @@
             text-align: center;
             justify-content: center;
             color: $color-grey-dark-2;
+
+            @include respond (tab-land) {
+                font-size: 12px;
+            }
+
+            @include respond (tab-port) {
+                font-size: 10px;
+        
+            }
+                        //como el phone es mas pequrño viene despues de tab-port
+            @include respond (phone) {
+                font-size: 9px
+        
+            }
+           
 
             &--2 {
                 font-size: 18px;
@@ -198,6 +261,22 @@
                 a {
                     text-decoration: none;
                 }
+
+                @include respond (tab-land) {
+                    font-size: 12px;
+                }
+
+                @include respond (tab-port) {
+                    font-size: 10px;
+            
+                }
+                            //como el phone es mas pequrño viene despues de tab-port
+                @include respond (phone) {
+                    font-size: 9px
+            
+                }
+
+               
             }
         }
 
@@ -207,6 +286,22 @@
             text-align: center;
             justify-content: center;
             color: $color-grey-dark-2;
+
+            @include respond (tab-land) {
+                font-size: 13px;
+            }
+
+            @include respond (tab-port) {
+                font-size: 10px;
+        
+            }
+                        //como el phone es mas pequrño viene despues de tab-port
+            @include respond (phone) {
+                font-size: 9px
+        
+            }
+
+           
             &--3 {
                 font-size: 1rem;
                 padding: 3px;
@@ -218,6 +313,22 @@
                 a {
                     text-decoration: none;
                 } 
+
+                @include respond (tab-land) {
+                    font-size: 10px;
+                }
+
+                @include respond (tab-port) {
+                    font-size: 9px;
+            
+                }
+                            //como el phone es mas pequrño viene despues de tab-port
+                @include respond (phone) {
+                    font-size: 8px
+            
+                }
+
+               
             }
         }
 

@@ -454,6 +454,12 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       -webkit-box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(0, 18, 147, 0.85)); }
+      @media (max-width: 56.25em) {
+        .card__header-span--2 {
+          font-size: 1rem; } }
+      @media (max-width: 37.5em) {
+        .card__header-span--2 {
+          font-size: .90rem; } }
     .card__header-span--3 {
       -webkit-box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
@@ -470,6 +476,15 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       text-align: center;
       justify-content: center;
       color: #555555; }
+      @media (max-width: 75em) {
+        .card__details-uno {
+          font-size: 11px; } }
+      @media (max-width: 56.25em) {
+        .card__details-uno {
+          font-size: 10px; } }
+      @media (max-width: 37.5em) {
+        .card__details-uno {
+          font-size: 9px; } }
       .card__details-uno--1 {
         font-size: 1rem;
         padding: 3px;
@@ -479,12 +494,30 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         color: #555555; }
         .card__details-uno--1 a {
           text-decoration: none; }
+      @media (max-width: 75em) {
+        .card__details-uno {
+          font-size: 10px; } }
+      @media (max-width: 56.25em) {
+        .card__details-uno {
+          font-size: 9px; } }
+      @media (max-width: 37.5em) {
+        .card__details-uno {
+          font-size: 8px; } }
     .card__details-dos {
       font-size: 18px;
       padding: 2.37rem;
       text-align: center;
       justify-content: center;
       color: #555555; }
+      @media (max-width: 75em) {
+        .card__details-dos {
+          font-size: 12px; } }
+      @media (max-width: 56.25em) {
+        .card__details-dos {
+          font-size: 10px; } }
+      @media (max-width: 37.5em) {
+        .card__details-dos {
+          font-size: 9px; } }
       .card__details-dos--2 {
         font-size: 18px;
         padding: 3px;
@@ -494,12 +527,30 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         color: #555555; }
         .card__details-dos--2 a {
           text-decoration: none; }
+        @media (max-width: 75em) {
+          .card__details-dos--2 {
+            font-size: 12px; } }
+        @media (max-width: 56.25em) {
+          .card__details-dos--2 {
+            font-size: 10px; } }
+        @media (max-width: 37.5em) {
+          .card__details-dos--2 {
+            font-size: 9px; } }
     .card__details-tres {
       font-size: 18px;
       padding: 2.37rem;
       text-align: center;
       justify-content: center;
       color: #555555; }
+      @media (max-width: 75em) {
+        .card__details-tres {
+          font-size: 13px; } }
+      @media (max-width: 56.25em) {
+        .card__details-tres {
+          font-size: 10px; } }
+      @media (max-width: 37.5em) {
+        .card__details-tres {
+          font-size: 9px; } }
       .card__details-tres--3 {
         font-size: 1rem;
         padding: 3px;
@@ -509,6 +560,15 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         color: #555555; }
         .card__details-tres--3 a {
           text-decoration: none; }
+        @media (max-width: 75em) {
+          .card__details-tres--3 {
+            font-size: 10px; } }
+        @media (max-width: 56.25em) {
+          .card__details-tres--3 {
+            font-size: 9px; } }
+        @media (max-width: 37.5em) {
+          .card__details-tres--3 {
+            font-size: 8px; } }
 
 .data {
   width: 75%;
@@ -603,6 +663,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     display: flex;
     justify-content: center; }
   @media (max-width: 56.25em) {
+    .map-caracteristicas {
+      height: 85rem; } }
+  @media (max-width: 75em) {
     .map-caracteristicas {
       height: 85rem; } }
 
