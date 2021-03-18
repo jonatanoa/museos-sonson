@@ -20,20 +20,41 @@
     .abuelos {
         right: 12rem;
         top: 19rem;
+
+        @include respond (phone) {
+            right: 14rem;
+    
+        }
     }
 
     .religioso {
         left: 48rem;
         top: 11rem;
+
+        @include respond (phone) {
+            left: 43rem;
+    
+        }
     }
 
     .ciudadela{
         left: 12rem;
         top: 3rem;
+
+        @include respond (phone) {
+            left:14rem
+    
+        }
     }
     
     .Maiz {
         right: 47rem;
+
+                    
+        @include respond (phone) {
+            right: 43rem;
+    
+        }
     }
 }
 

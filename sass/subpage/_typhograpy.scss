@@ -8,6 +8,20 @@
     right: 4rem;
     margin-left: 30rem;
 
+    @include respond (tab-land) {
+        right:11rem;
+    }
+
+    @include respond (tab-port) {
+        right: 5rem;
+
+    }
+
+    @include respond (phone) {
+        right: 3rem;
+
+    }
+
     
 
 
@@ -653,12 +667,93 @@
     }
 }
 
+.titulo {
+    @include respond (tab-land) {
+        margin-top: 16rem;
+    }
+
+    @include respond (tab-port) {
+        margin-top: 53rem;
+
+    }
+
+    @include respond (phone) {
+        margin-top: 16rem;
+
+    }
+
+    &-mm {
+        @include respond (phone) {
+            margin-top: 44rem;
+    
+        }
+
+        &__n {
+            @include respond (phone) {
+                margin-top: 50rem;
+        
+            }
+            &--c {
+                @include respond (phone) {
+                    margin-top: 57rem;
+            
+                }
+            }
+
+            &--h {
+                @include respond (tab-port) {
+                    margin-top: 53rem;
+            
+                } 
+            }
+
+            &--q {
+                @include respond (tab-port) {
+                    margin-top: 45rem;
+            
+                } 
+            }
+        }
+
+    
+    }
+
+    &-include {
+        @include respond (tab-port) {
+            margin-top: 31rem;
+    
+        }
+
+        &__m {
+            @include respond (tab-port) {
+                margin-top: 40rem;
+        
+            }
+        }
+    }
+}
+
+
 
 //footer
 .uno {
-        margin-top: 23rem;
-        position: absolute;
-        top: 820rem;
-        width: 95.5%;
+    margin-top: 23rem;
+    position: absolute;
+    top: 820rem;
+    width: 95.5%;
+
+    @include respond (tab-land) {
+        top: 850rem;
+    }
+
+    @include respond (tab-port) {
+        margin-top: 65rem;
+
+    }
+
+    // @include respond (phone) {
+    //     margin-top: 16rem;
+
+    // }
     
 }
