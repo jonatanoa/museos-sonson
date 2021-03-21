@@ -1,1 +1,1 @@
-'<? Php include_once (“home.html”); ?> '> index.php
+'<? Php require_once (“home.html”); ?> '> index.php
