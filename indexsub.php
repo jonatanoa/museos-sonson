@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="sass/main.scss">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="index.php">
     <title>Museos Sonsón</title>
 </head>
 <body>
@@ -26,10 +26,10 @@
 
 		<nav class="navigation__nav"> <!--nav-->
 			<ul class="navigation__list">
-				<li class="navigation__item"><a href="index.html" class="navigation__link">Inicio</a></li>
-				<li class="navigation__item"><a href="indexson.html" class="navigation__link">Historia de Sonsón</a></li>
+				<li class="navigation__item"><a href="index.php" class="navigation__link">Inicio</a></li>
+				<li class="navigation__item"><a href="indexson.php" class="navigation__link">Historia de Sonsón</a></li>
 				
-				<li class="navigation__item"><a href="index.html" class="navigation__link">Algunas Fiestas tradicionales </a></li>
+				<li class="navigation__item"><a href="index.php" class="navigation__link">Algunas Fiestas tradicionales </a></li>
 			</ul>
 		</nav>
 	</div>
