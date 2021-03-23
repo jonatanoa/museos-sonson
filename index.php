@@ -129,7 +129,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="indexsub.html" class="btn-2">Mas museos</a> <!-- &rarr; se traduce como una flecha-->
+			<a href="indexsub.php" class="btn-2">Mas museos</a> <!-- &rarr; se traduce como una flecha-->
 		</section>
 		<section class="party-section"> <!--fiestas-->
 			<div class="u-center-text u-margin-bottom-big">
