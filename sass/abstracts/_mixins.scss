@@ -30,7 +30,7 @@ ORDER: Base + typography > general layout +grid > page layout > components
 @mixin respond ($breakpoint) { //respond es un nombre de identificacion que se le da a mixin,  puede llevar calquier nombre
  
     @if $breakpoint == cel {  //phone es otro nombre que se la da a $breakpoint
-        @media (max-width: 20em) { @content }; //320px
+        @media (max-width: 22.5em) { @content }; //360px
     }
    
     @if $breakpoint == phone {  //phone es otro nombre que se la da a $breakpoint
