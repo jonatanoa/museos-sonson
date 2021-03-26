@@ -22,15 +22,16 @@ html {
 		font-size: 70%;
 		
 	}
+	@include respond(cel) {
+		font-size: 60%;
+		
+	}
 
 	@include respond(tab-port) {
 		font-size: 60%;
 	}
 
-	@include respond(cel) {
-		font-size: 30%;
-		
-	}
+	
 
 	@include respond(big-dektop) {
 		font-size: 80%;
