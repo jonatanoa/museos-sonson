@@ -6,6 +6,12 @@
     // position: absolute;
     // // top: 820rem;
     // width: 100%;
+
+     @include respond(cel) {
+
+        margin-top: 65rem; 
+                
+    }
     
 
     &__logo-box {

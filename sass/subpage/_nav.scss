@@ -23,6 +23,11 @@
         margin-left: -35rem;
 
     }
+
+    @include respond(cel) {
+        margin-left: -45rem;  
+        
+    }
    
     
     

@@ -57,6 +57,11 @@
         list-style: none;
         text-align: center;
         width: 100%; //esencial para el efecto de aparecer cuando se le da en el menu
+
+        @include respond(cel) {
+            top:30rem;
+            
+        }
     }
 
     &__item {

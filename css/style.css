@@ -111,6 +111,9 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 60%; } }
+  @media (max-width: 20em) {
+    html {
+      font-size: 30%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 80%; } }
@@ -481,6 +484,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       @media (max-width: 37.5em) {
         .card__header-span--2 {
           font-size: .90rem; } }
+      @media (max-width: 20em) {
+        .card__header-span--2 {
+          font-size: 4px;
+          padding: 5px; } }
     .card__header-span--3 {
       -webkit-box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
@@ -506,6 +513,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       @media (max-width: 37.5em) {
         .card__details-uno {
           font-size: 9px; } }
+      @media (max-width: 20em) {
+        .card__details-uno {
+          font-size: 4px; } }
       .card__details-uno--1 {
         font-size: 1rem;
         padding: 3px;
@@ -515,15 +525,18 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         color: #555555; }
         .card__details-uno--1 a {
           text-decoration: none; }
-      @media (max-width: 75em) {
-        .card__details-uno {
-          font-size: 10px; } }
-      @media (max-width: 56.25em) {
-        .card__details-uno {
-          font-size: 9px; } }
-      @media (max-width: 37.5em) {
-        .card__details-uno {
-          font-size: 8px; } }
+        @media (max-width: 75em) {
+          .card__details-uno--1 {
+            font-size: 10px; } }
+        @media (max-width: 56.25em) {
+          .card__details-uno--1 {
+            font-size: 9px; } }
+        @media (max-width: 37.5em) {
+          .card__details-uno--1 {
+            font-size: 8px; } }
+        @media (max-width: 20em) {
+          .card__details-uno--1 {
+            font-size: 3.5px; } }
     .card__details-dos {
       font-size: 18px;
       padding: 2.37rem;
@@ -539,6 +552,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       @media (max-width: 37.5em) {
         .card__details-dos {
           font-size: 9px; } }
+      @media (max-width: 20em) {
+        .card__details-dos {
+          font-size: 6px; } }
       .card__details-dos--2 {
         font-size: 18px;
         padding: 3px;
@@ -557,6 +573,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         @media (max-width: 37.5em) {
           .card__details-dos--2 {
             font-size: 9px; } }
+        @media (max-width: 20em) {
+          .card__details-dos--2 {
+            font-size: 4px; } }
     .card__details-tres {
       font-size: 18px;
       padding: 2.37rem;
@@ -572,6 +591,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       @media (max-width: 37.5em) {
         .card__details-tres {
           font-size: 9px; } }
+      @media (max-width: 20em) {
+        .card__details-tres {
+          font-size: 6px; } }
       .card__details-tres--3 {
         font-size: 1rem;
         padding: 3px;
@@ -590,6 +612,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         @media (max-width: 37.5em) {
           .card__details-tres--3 {
             font-size: 8px; } }
+        @media (max-width: 20em) {
+          .card__details-tres--3 {
+            font-size: 3.5px; } }
 
 .data {
   width: 75%;
@@ -779,6 +804,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   padding: 3rem;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  @media (max-width: 20em) {
+    .footer {
+      margin-top: 65rem; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 2rem; }
@@ -865,6 +893,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   list-style: none;
   text-align: center;
   width: 100%; }
+  @media (max-width: 20em) {
+    .navigation__list {
+      top: 30rem; } }
 
 .navigation__item {
   margin: 1rem; }
@@ -935,6 +966,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -22vh; }
+  @media (max-width: 20em) {
+    .section-about {
+      margin-top: -15vh; } }
 
 .section-features {
   padding: 4rem 0;
@@ -976,6 +1010,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   @media (max-width: 37.5em) {
     .menu {
       margin-left: -35rem; } }
+  @media (max-width: 20em) {
+    .menu {
+      margin-left: -45rem; } }
   .menu-nav {
     padding: 1.25rem;
     margin-top: 1.25rem;
@@ -1082,6 +1119,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   @media (max-width: 37.5em) {
     .museos {
       right: 3rem; } }
+  @media (max-width: 20em) {
+    .museos {
+      right: 6rem; } }
   .museos h4 {
     text-align: center;
     font-size: 1.25rem; }
@@ -1476,33 +1516,68 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .titulo-mm__n--c {
     margin-top: 57rem; } }
 
+@media (max-width: 75em) {
+  .titulo-mm__n--h {
+    margin-top: 20rem; } }
+
 @media (max-width: 56.25em) {
   .titulo-mm__n--h {
     margin-top: 53rem; } }
+
+@media (max-width: 20em) {
+  .titulo-mm__n--h {
+    margin-top: 33rem; } }
+
+@media (max-width: 75em) {
+  .titulo-mm__n--q {
+    margin-top: 20rem; } }
 
 @media (max-width: 56.25em) {
   .titulo-mm__n--q {
     margin-top: 45rem; } }
 
+@media (max-width: 20em) {
+  .titulo-mm__n--q {
+    margin-top: 25rem; } }
+
+@media (max-width: 75em) {
+  .titulo-include {
+    margin-top: 16rem; } }
+
 @media (max-width: 56.25em) {
   .titulo-include {
     margin-top: 31rem; } }
+
+@media (max-width: 20em) {
+  .titulo-include {
+    margin-top: 20rem; } }
+
+@media (max-width: 75em) {
+  .titulo-include__m {
+    margin-top: 16rem; } }
 
 @media (max-width: 56.25em) {
   .titulo-include__m {
     margin-top: 40rem; } }
 
+@media (max-width: 20em) {
+  .titulo-include__m {
+    margin-top: 23rem; } }
+
 .uno {
-  margin-top: 70rem;
+  margin-top: 15rem;
   position: absolute;
   top: 820rem;
   width: 95.5%; }
   @media (max-width: 75em) {
     .uno {
-      top: 850rem; } }
+      top: 870rem; } }
   @media (max-width: 56.25em) {
     .uno {
-      margin-top: 65rem; } }
+      margin-top: 80rem; } }
+  @media (max-width: 20em) {
+    .uno {
+      margin-top: 116rem; } }
 
 .subb {
   text-align: center; }
@@ -1525,6 +1600,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     .historias {
       margin: 2rem;
       padding-left: 6rem; } }
+  @media (max-width: 20em) {
+    .historias {
+      margin-left: -5rem; } }
   .historias-titulo1 {
     text-align: center;
     font-size: 2.5rem;
@@ -1581,6 +1659,9 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   @media (max-width: 37.5em) {
     .photo {
       margin-left: -1rem; } }
+  @media (max-width: 20em) {
+    .photo {
+      margin-left: -3.5rem; } }
 
 .photo .card {
   position: relative;

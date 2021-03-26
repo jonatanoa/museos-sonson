@@ -10,6 +10,9 @@ html {
 	// @include respond-phone {
 	// 	font-size: 50%;
 	// }
+
+	
+
 	@include respond(phone) {
 		font-size: 50%;
 		
@@ -22,6 +25,11 @@ html {
 
 	@include respond(tab-port) {
 		font-size: 60%;
+	}
+
+	@include respond(cel) {
+		font-size: 30%;
+		
 	}
 
 	@include respond(big-dektop) {
@@ -37,4 +45,6 @@ body {
 		padding: 10px;
 		
 	}
+
+	
 }

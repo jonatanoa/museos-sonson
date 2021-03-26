@@ -22,6 +22,11 @@
 
     }
 
+    @include respond(cel) {
+        right: 6rem; 
+        
+    }
+
     
 
 
@@ -682,6 +687,8 @@
 
     }
 
+    
+
     &-mm {
         @include respond (phone) {
             margin-top: 44rem;
@@ -698,20 +705,42 @@
                     margin-top: 57rem;
             
                 }
+
+               
             }
 
             &--h {
+
+                @include respond (tab-land) {
+                    margin-top: 20rem;
+                }
+
                 @include respond (tab-port) {
                     margin-top: 53rem;
             
                 } 
+
+                @include respond(cel) {
+                    margin-top: 33rem;  
+                    
+                }
             }
 
             &--q {
+
+                @include respond (tab-land) {
+                    margin-top: 20rem;
+                }
+
                 @include respond (tab-port) {
                     margin-top: 45rem;
             
                 } 
+
+                @include respond(cel) {
+                    margin-top: 25rem;  
+                    
+                }
             }
         }
 
@@ -719,17 +748,39 @@
     }
 
     &-include {
+
+        @include respond (tab-land) {
+            margin-top: 16rem;
+        }
+
         @include respond (tab-port) {
             margin-top: 31rem;
     
         }
 
+        @include respond(cel) {
+            margin-top: 20rem;  
+            
+        }
+
         &__m {
+
+            @include respond (tab-land) {
+                margin-top: 16rem;
+            }
+
             @include respond (tab-port) {
                 margin-top: 40rem;
         
             }
+
+            @include respond(cel) {
+                margin-top: 23rem;  
+                
+            }
         }
+
+        
     }
 }
 
@@ -737,18 +788,23 @@
 
 //footer
 .uno {
-    margin-top:70rem;
+    margin-top:15rem;
     position: absolute;
     top: 820rem;
     width: 95.5%;
 
     @include respond (tab-land) {
-        top: 850rem;
+        top: 870rem;
     }
 
     @include respond (tab-port) {
-        margin-top: 65rem;
+        margin-top: 80rem;
 
+    }
+
+    @include respond(cel) {
+        margin-top: 116rem;  
+        
     }
 
     // @include respond (phone) {

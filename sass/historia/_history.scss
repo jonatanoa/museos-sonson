@@ -15,6 +15,8 @@
             margin-left: 6rem;
     
         }
+
+        
     }
 }
 
@@ -25,6 +27,11 @@
     @include respond (phone) {
         margin: 2rem;
         padding-left: 6rem;
+    }
+
+    @include respond(cel) {
+        margin-left: -5rem;  
+        
     }
     &-titulo1 {
         text-align: center;
