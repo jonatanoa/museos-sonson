@@ -23,7 +23,7 @@
     }
 
     @include respond(cel) {
-        right: 6rem; 
+        right: 11rem; 
         
     }
 
@@ -788,7 +788,7 @@
 
 //footer
 .uno {
-    margin-top:15rem;
+    margin-top:33rem;
     position: absolute;
     top: 820rem;
     width: 95.5%;
@@ -803,7 +803,7 @@
     }
 
     @include respond(cel) {
-        margin-top: 116rem;  
+        margin-top: 25rem;  
         
     }
 

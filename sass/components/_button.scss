@@ -108,6 +108,11 @@ animation-duration: 5s;
 	
 		}
 
+		@include respond(cel) {
+			left: 29rem;
+			padding: 6px 2.5rem;
+		 }
+
 	}
 
 	&:hover{

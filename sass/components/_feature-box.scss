@@ -35,6 +35,11 @@
             left: 43rem;
     
         }
+
+        @include respond(cel) {
+            left: 47rem; 
+             
+        }
     }
 
     .ciudadela{
@@ -54,6 +59,11 @@
         @include respond (phone) {
             right: 43rem;
     
+        }
+
+        @include respond(cel) {
+           right: 47rem; 
+            
         }
     }
 }

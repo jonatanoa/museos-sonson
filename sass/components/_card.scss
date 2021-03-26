@@ -238,7 +238,8 @@
                 }
 
                 @include respond(cel) {
-                    font-size: 3.5px;   
+                    font-size: 3.5px;  
+                    margin: 10px; 
                     
                 }
 
@@ -271,7 +272,7 @@
             }
 
             @include respond(cel) {
-                font-size: 6px;   
+                font-size: 5.5px;   
                 
             }
            

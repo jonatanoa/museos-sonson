@@ -17,6 +17,12 @@
         }
 
         
+         @include respond(cel) {
+            margin-left: -1rem;  
+        
+        }
+
+        
     }
 }
 
@@ -84,4 +90,8 @@
     @include respond (tab-land) {
         margin-top: 5rem;
     }
+}
+
+.foot {
+   margin-top: 8rem; 
 }
