@@ -36,7 +36,7 @@ ORDER: Base + typography > general layout +grid > page layout > components
     }
 
     @if $breakpoint == cel {  //phone es otro nombre que se la da a $breakpoint
-        @media (max-width: 40em) { @content }; //720px
+        @media (max-width: 48em) { @content }; //720px
     }
 
     @if $breakpoint == tab-port {  //phone es otro nombre que se la da a $breakpoint
