@@ -100,23 +100,25 @@ ORDER: Base + typography > general layout +grid > page layout > components
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
-  font-size: 100%; }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 50%; } }
-  @media (max-width: 75em) {
-    html {
-      font-size: 70%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 60%; } }
-  @media (max-width: 48em) {
-    html {
-      font-size: 55%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 80%; } }
+@media (max-width: 37.5em) {
+  html {
+    font-size: 50%; } }
+
+@media (max-width: 75em) {
+  html {
+    font-size: 70%; } }
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 60%; } }
+
+@media (max-width: 48em) {
+  html {
+    font-size: 55%; } }
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 80%; } }
 
 body {
   padding: 1.87rem;
