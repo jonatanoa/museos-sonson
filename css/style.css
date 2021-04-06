@@ -928,7 +928,7 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Lobster', cursive;
   font-weight: 100;
   padding: .3rem 1rem;
