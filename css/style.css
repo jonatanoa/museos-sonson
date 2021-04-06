@@ -112,10 +112,6 @@ ORDER: Base + typography > general layout +grid > page layout > components
   html {
     font-size: 60%; } }
 
-@media (max-width: 48em) {
-  html {
-    font-size: 55%; } }
-
 @media (min-width: 112.5em) {
   html {
     font-size: 80%; } }

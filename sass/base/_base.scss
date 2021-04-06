@@ -28,10 +28,10 @@ html {
 		font-size: 60%;
 	}
 
-	@include respond(cel) {
-		font-size: 55%;
+	// @include respond(cel) {
+	// 	font-size: 55%;
 		
-	}
+	// }
 
 	@include respond(big-dektop) {
 		font-size: 80%;
