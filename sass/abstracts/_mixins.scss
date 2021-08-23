@@ -27,27 +27,3 @@ ORDER: Base + typography > general layout +grid > page layout > components
 
 */
 
-@mixin respond ($breakpoint) { //respond es un nombre de identificacion que se le da a mixin,  puede llevar calquier nombre
- 
-  
-   
-    @if $breakpoint == phone {  //phone es otro nombre que se la da a $breakpoint
-        @media (max-width: 37.5em) { @content }; //600px
-    }
-
-    // @if $breakpoint == cel {  //phone es otro nombre que se la da a $breakpoint
-    //     @media (max-width: 48em) { @content }; //720px
-    // }
-
-    @if $breakpoint == tab-port {  //phone es otro nombre que se la da a $breakpoint
-        @media (max-width: 56.25em) { @content }; //900px
-    }
-
-    @if $breakpoint == tab-land {  //phone es otro nombre que se la da a $breakpoint
-        @media (max-width: 75em) { @content };//1200px
-    }
-
-    @if $breakpoint == big-dektop {  //phone es otro nombre que se la da a $breakpoint
-        @media (min-width: 112.5em) { @content };//1800px
-    }
-}

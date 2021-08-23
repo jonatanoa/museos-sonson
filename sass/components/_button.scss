@@ -94,25 +94,6 @@ animation-duration: 5s;
 		right: -34rem;
 		top: -1rem;
 
-		@include respond (tab-land) {
-			left: 46.5rem;
-		}
-
-		@include respond (tab-port) {
-			left: 39.9em;
-	
-		}
-					//como el phone es mas pequrño viene despues de tab-port
-		@include respond (phone) {
-			left: 24rem;
-	
-		}
-
-		@include respond(cel) {
-			left: 29rem;
-			padding: 6px 2.5rem;
-		 }
-
 	}
 
 	&:hover{

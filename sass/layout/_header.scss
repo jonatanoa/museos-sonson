@@ -38,12 +38,7 @@
 	/*para mover la imagen*/
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
-	@include respond(cel) {
-        height: 60vh;  
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%); 
-        
-    }
+	
 	&-logo-box {
 		position: absolute;
 		top: 4rem; /*arriba*/

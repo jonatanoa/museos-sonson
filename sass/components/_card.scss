@@ -60,39 +60,39 @@
 
         &--1 {
             background-image:  linear-gradient(to right bottom, $color-green-dark-1, $color-primary), 
-            url(../../img/maizz.jpg);
+            url(https://entrecejayceja.co/wp-content/uploads/2018/07/140815050802FIESTAS-MAIZ600.jpg);
             
         }
 
         &--2 {
             background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-blue-dark), 
-            url(../../img/carmen.jpg);
+            url(https://4.bp.blogspot.com/-ubSmEV1hN1E/WX4Hzvx6mTI/AAAAAAAAC-0/gVbzOmvfqZwyiUUlwGvjMkdpr1TDY7H8gCLcBGAs/s1600/maxresdefault.jpg);
             
         }
 
         &--3 {
             background-image:  linear-gradient(to right bottom, $color-blue-1, $color-blue-2), 
-            url(../../img/higoo.jpg);
+            url(https://live.staticflickr.com/8528/8625154413_e8d4d75ff7_b.jpg);
         }
 
         &--back-maiz{                       //parde de atras
             background-blend-mode: overlay;
             clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
             background-image:  linear-gradient(to right bottom, $color-green-dark-1, $color-primary), 
-            url(../../img/maizzz.jpeg);
+            url(https://www.periodicoelparamo.com/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-08-at-3.15.35-PM.jpeg);
         }
 
         &--back-carmen {
             clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
             background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-blue-dark), 
-            url(../../img/carmenn.jpg);
+            url(https://i.ytimg.com/vi/RVQSG_5a-3o/maxresdefault.jpg);
         }
 
         &--back-higo {
             background-blend-mode: overlay;
             clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
             background-image:  linear-gradient(to right bottom, $color-green-dark, $color-black), 
-            url(../../img/higooo.jpg);
+            url(https://www.periodicoelparamo.com/wp-content/uploads/2019/11/Finca-Higuera-1024x683.jpg);
         }
     }
 
@@ -113,16 +113,7 @@
         padding: 2px 12px;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-        
-        @include respond (tab-port) {
-            font-size: 2rem;
-    
-        }
-                    //como el phone es mas pequrño viene despues de tab-port
-        @include respond (phone) {
-            font-size: 1.5rem;
-    
-        }
+       
         
 
         &--1{
@@ -141,23 +132,6 @@
             background-image: linear-gradient(to right bottom, 
             rgba($color-tertiary-light, .85), 
             rgba($color-blue-dark, .85));
-
-
-            @include respond (tab-port) {
-                font-size: 1rem;
-        
-            }
-                        //como el phone es mas pequrño viene despues de tab-port
-            @include respond (phone) {
-                font-size: .90rem;
-        
-            }
-
-            @include respond(cel) {
-                font-size: 4px;
-                padding: 5px;
-                
-            }
         }
 
         &--3{
@@ -187,30 +161,6 @@
             text-align: center;
             justify-content: center;
             color: $color-grey-dark-2;
-
-        @include respond (tab-land) {
-                font-size: 11px;
-        }
-               
-        @include respond (tab-port) {
-            font-size: 10px;
-    
-        }
-                    //como el phone es mas pequrño viene despues de tab-port
-        @include respond (phone) {
-            font-size: 9px
-    
-        }
-
-        @include respond(cel) {
-            font-size: 4px;   
-            
-        }
-        
-
-      
-            
-
             &--1 {
                 font-size: 1rem;
                 padding: 3px;
@@ -221,26 +171,6 @@
 
                 a {
                     text-decoration: none;
-                }
-
-            
-                @include respond (tab-land) {
-                    font-size: 10px;
-                }
-
-                @include respond (tab-port) {
-                    font-size: 9px;
-            
-                }
-                            //como el phone es mas pequrño viene despues de tab-port
-                @include respond (phone) {
-                    font-size: 8px
-                }
-
-                @include respond(cel) {
-                    font-size: 3.5px;  
-                    margin: 10px; 
-                    
                 }
 
             }
@@ -257,26 +187,6 @@
             justify-content: center;
             color: $color-grey-dark-2;
 
-            @include respond (tab-land) {
-                font-size: 12px;
-            }
-
-            @include respond (tab-port) {
-                font-size: 10px;
-        
-            }
-                        //como el phone es mas pequrño viene despues de tab-port
-            @include respond (phone) {
-                font-size: 9px
-        
-            }
-
-            @include respond(cel) {
-                font-size: 5.5px;   
-                
-            }
-           
-
             &--2 {
                 font-size: 18px;
                 padding: 3px;
@@ -288,28 +198,6 @@
                 a {
                     text-decoration: none;
                 }
-
-                @include respond (tab-land) {
-                    font-size: 12px;
-                }
-
-                @include respond (tab-port) {
-                    font-size: 10px;
-            
-                }
-                            //como el phone es mas pequrño viene despues de tab-port
-                @include respond (phone) {
-                    font-size: 9px
-            
-                }
-
-                @include respond(cel) {
-                    font-size: 4px;   
-                    
-                }
-                
-
-               
             }
         }
 
@@ -319,29 +207,6 @@
             text-align: center;
             justify-content: center;
             color: $color-grey-dark-2;
-
-            @include respond (tab-land) {
-                font-size: 13px;
-            }
-
-            @include respond (tab-port) {
-                font-size: 10px;
-        
-            }
-                        //como el phone es mas pequrño viene despues de tab-port
-            @include respond (phone) {
-                font-size: 9px
-        
-            }
-
-            
-            @include respond(cel) {
-                font-size: 6px;   
-                
-            }
-           
-
-           
             &--3 {
                 font-size: 1rem;
                 padding: 3px;
@@ -353,27 +218,6 @@
                 a {
                     text-decoration: none;
                 } 
-
-                @include respond (tab-land) {
-                    font-size: 10px;
-                }
-
-                @include respond (tab-port) {
-                    font-size: 9px;
-            
-                }
-                            //como el phone es mas pequrño viene despues de tab-port
-                @include respond (phone) {
-                    font-size: 8px
-            
-                }
-
-                @include respond(cel) {
-                    font-size: 3.5px;   
-                    
-                }
-
-               
             }
         }
 

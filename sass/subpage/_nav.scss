@@ -8,28 +8,6 @@
     font-size: 14px;
     z-index: -2000;
 
-    @include respond (tab-land) {
-        margin-left: -35.5rem;
-        top: 5rem;
-    }
-
-    @include respond (tab-port) {
-        margin-left: -32.5rem;
-        top: 4rem;
-
-    }
-                //como el phone es mas pequrño viene despues de tab-port
-    @include respond (phone) {
-        margin-left: -35rem;
-
-    }
-
-    @include respond(cel) {
-        margin-left: -47rem;  
-        
-    }
-   
-    
     
     &-nav {
         padding: 1.25rem;
@@ -41,16 +19,6 @@
         width: 20rem;
         border-radius: 6px;
 
-        @include respond (tab-land) {
-            height: 48rem;
-            width: 28rem;
-        }
-
-        @include respond (tab-port) {
-            height: 60rem;
-            width: 30rem;
-        }
-        
         
 
         & h2 {
@@ -62,11 +30,6 @@
             font-weight: 500;
             border-bottom: 2px solid #dadada;
             text-transform: uppercase;
-
-            @include respond (tab-land) {
-                margin-left: 5rem;
-            }
-            
         }
 
         & ul {
@@ -95,10 +58,6 @@
             transition: background 0.5s, width 0.5s;
             transition-delay: 0.5s, 0s; // este en el hover hace que el efecto se quede un momento en el circulo y despues se alargue
             border: 2px solid #03a9f4;
-
-            @include respond (tab-land) {
-                top: -3px;
-            }
         }
 
         & ul li:hover::before { //cuando pase el mause se aumete el circulo al 100% del espacio
@@ -119,17 +78,6 @@
             transform: rotate(45deg); //para que la flecha creada con los border, se enderece
             transition: .5s;
             transition-delay: 0s;
-            @include respond (tab-land) {
-                top: 7px;
-                left:9px;
-            }
-
-            @include respond (tab-port) {
-                top: 6px;
-                left:7px;
-            }
-
-            
         }
         & ul li:hover::after {
             left: 1.5rem; //para que la flecha se vaya a la derecha

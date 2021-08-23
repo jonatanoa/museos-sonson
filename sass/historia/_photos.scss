@@ -10,25 +10,6 @@
     transform-style: preserve-3d;
     width: 68.75rem;
 
-    @include respond (tab-land) {
-        margin-left: 17rem;
-    }
-
-    @include respond (tab-port) {
-        margin-left: 10.5rem;
-
-    }
-                //como el phone es mas pequrño viene despues de tab-port
-    @include respond (phone) {
-        margin-left: -1rem;
-
-    }
-
-    @include respond(cel) {
-        margin-left: .5rem;  
-        
-    }
-
 }
 
 .photo .card {

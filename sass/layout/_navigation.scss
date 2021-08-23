@@ -16,14 +16,6 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 50%);
         text-align: center;
         cursor: pointer;
-
-        @include respond(cel) {
-            height: 7.5rem;
-            width: 7.5rem;
-            -webkit-box-shadow: -7px 5px 15px 5px rgba(0,0,0,0.28); 
-            box-shadow: -7px 5px 15px 5px rgba(0,0,0,0.28);
-        }
-
     }
 
     &__background {
@@ -39,13 +31,6 @@
         -webkit-box-shadow: 5px 5px 15px 5px #000000; 
         box-shadow: 5px 5px 15px 5px #000000;
         transition: transform .8s  cubic-bezier(0.65, 0, 0.35, 1);
-
-        @include respond(cel) {
-            -webkit-box-shadow: -7px 5px 7px 19px rgba(0,0,0,0.17); 
-            box-shadow: -7px 5px 7px 19px rgba(0,0,0,0.17);
-        }
-        
-
     }
 
     &__nav {                //nav es el contenedor de list
@@ -69,11 +54,6 @@
         list-style: none;
         text-align: center;
         width: 100%; //esencial para el efecto de aparecer cuando se le da en el menu
-
-        @include respond(cel) {
-            top:30rem;
-            
-        }
     }
 
     &__item {
@@ -129,13 +109,6 @@
             height: 3px;
             background-color: $color-grey-dark-3;
             display: inline-block;
-
-            @include respond(cel) {
-                width: 4rem;
-                height: 1px;
-                margin-top: 2.9rem;
-                
-            }
         }
 
         &::before,
@@ -146,16 +119,8 @@
             transition: all .2s;
         }
 
-        &::before {top: -.5rem;
-            @include respond(cel) {
-                top: -1.9rem;
-            }
-        } //linea de arriba
-        &::after {top: .5rem;
-            @include respond(cel) {
-                top: -.9rem
-            }
-        }//linea de abajo
+        &::before {top: -.5rem;} //linea de arriba
+        &::after {top: .5rem;}//linea de abajo
     }
 
     &__button:hover &__icon::before { //linea de arriba
@@ -173,21 +138,10 @@
     &__checkbox:checked + &__button &__icon::before {
         top:0; //se especifica top 0 para que se crucen ambas lineas una entre otra (X), si no se especifica quedan (>)
         transform: rotate(135deg);
-
-        @include respond(cel) {
-            top: -8px;
-            left: -1px;
-        }
-
     }
 
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
-
-        @include respond(cel) {
-            top: -8px;
-            left: -1px;
-        }
     }
 }

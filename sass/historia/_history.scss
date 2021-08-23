@@ -10,35 +10,13 @@
         color: red;
         text-shadow:-1px 1px 3px #000000;
         font-family: 'Lobster', cursive;
-
-        @include respond (phone) {
-            margin-left: 6rem;
-    
-        }
-
-        
-         @include respond(cel) {
-            margin-left: -1rem;  
-        
-        }
-
-        
     }
 }
 
 .historias {
     margin-top: 8rem;
     margin: 8rem;
-
-    @include respond (phone) {
-        margin: 2rem;
-        padding-left: 6rem;
-    }
-
-    @include respond(cel) {
-        margin-left: -5rem;  
-        
-    }
+    
     &-titulo1 {
         text-align: center;
         font-size: 2.5rem;
@@ -86,11 +64,6 @@
     }
 }
 
-.hh3 {
-    @include respond (tab-land) {
-        margin-top: 5rem;
-    }
-}
 
 .foot {
    margin-top: 8rem; 

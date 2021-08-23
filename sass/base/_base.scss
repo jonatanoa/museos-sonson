@@ -5,47 +5,9 @@
 	box-sizing: border-box;
 }
 
-html {
-	// font-size: 100%;
-	// @include respond-phone {
-	// 	font-size: 50%;
-	// }
 
-	
-
-	@include respond(phone) {
-		font-size: 50%;
-		
-	}
-
-	@include respond(tab-land) {
-		font-size: 70%;
-		
-	}
-	
-
-	@include respond(tab-port) {
-		font-size: 60%;
-	}
-
-	// @include respond(cel) {
-	// 	font-size: 55%;
-		
-	// }
-
-	@include respond(big-dektop) {
-		font-size: 80%;
-	}
-}
 
 body {
 	padding: 1.87rem;
-	box-sizing: border-box;
-
-	@include respond(phone) {
-		padding: 10px;
-		
-	}
-
-	
+	box-sizing: border-box;	
 }

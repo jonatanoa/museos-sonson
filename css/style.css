@@ -100,35 +100,16 @@ ORDER: Base + typography > general layout +grid > page layout > components
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media (max-width: 37.5em) {
-  html {
-    font-size: 50%; } }
-
-@media (max-width: 75em) {
-  html {
-    font-size: 70%; } }
-
-@media (max-width: 56.25em) {
-  html {
-    font-size: 60%; } }
-
-@media (min-width: 112.5em) {
-  html {
-    font-size: 80%; } }
-
 body {
   padding: 1.87rem;
   box-sizing: border-box; }
-  @media (max-width: 37.5em) {
-    body {
-      padding: 10px; } }
 
 .heading-primary-main {
   color: #D62323;
   font-family: 'Lobster', cursive;
   display: block;
   /*block es para que el elemento qe tenga ekl block este en una sola linea*/
-  font-size: 6rem;
+  font-size: 5rem;
   /*sirve para cambiar el tamaño*/
   font-weight: 400;
   /*grosor de la letra*/
@@ -146,10 +127,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   animation-duration: 5s;
   /*animation-delay: 2s; este sirve para retrasar el efecto*/
   /*animation-iteration-count: este sirve para repetir la animacion*/ }
-  @media (max-width: 37.5em) {
-    .heading-primary-main {
-      letter-spacing: 1rem;
-      font-family: 5rem; } }
 
 .heading-primary-sub {
   display: block;
@@ -163,9 +140,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   animation-duration: 5s;
   /*animation-delay: 2s; este sirve para retrasar el efecto*/
   margin-bottom: 3.75rem; }
-  @media (max-width: 37.5em) {
-    .heading-primary-sub {
-      letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-family: 'Petit Formal Script', cursive;
@@ -178,12 +152,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   background-clip: text;
   color: transparent;
   transition: all .3s; }
-  @media (max-width: 56.25em) {
-    .heading-secondary {
-      font-size: 2.5rem; } }
-  @media (max-width: 37.5em) {
-    .heading-secondary {
-      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(9deg) scale(1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -300,15 +268,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   position: relative;
   right: -34rem;
   top: -1rem; }
-  @media (max-width: 75em) {
-    .btn-2:link, .btn-2:visited {
-      left: 46.5rem; } }
-  @media (max-width: 56.25em) {
-    .btn-2:link, .btn-2:visited {
-      left: 39.9em; } }
-  @media (max-width: 37.5em) {
-    .btn-2:link, .btn-2:visited {
-      left: 24rem; } }
 
 .btn-2:hover {
   transform: translateY(-3px) skewy(7deg);
@@ -373,29 +332,17 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 .feature-box .abuelos {
   right: 12rem;
   top: 19rem; }
-  @media (max-width: 37.5em) {
-    .feature-box .abuelos {
-      right: 14rem; } }
 
 .feature-box .religioso {
   left: 48rem;
   top: 11rem; }
-  @media (max-width: 37.5em) {
-    .feature-box .religioso {
-      left: 43rem; } }
 
 .feature-box .ciudadela {
   left: 12rem;
   top: 3rem; }
-  @media (max-width: 37.5em) {
-    .feature-box .ciudadela {
-      left: 14rem; } }
 
 .feature-box .Maiz {
   right: 47rem; }
-  @media (max-width: 37.5em) {
-    .feature-box .Maiz {
-      right: 43rem; } }
 
 .card {
   perspective: 200rem;
@@ -430,22 +377,22 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     background-blend-mode: soft-light;
     clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #158f03, #ffbb00), url(../../img/maizz.jpg); }
+      background-image: linear-gradient(to right bottom, #158f03, #ffbb00), url(https://entrecejayceja.co/wp-content/uploads/2018/07/140815050802FIESTAS-MAIZ600.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #2998ff, #001293), url(../../img/carmen.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #001293), url(https://4.bp.blogspot.com/-ubSmEV1hN1E/WX4Hzvx6mTI/AAAAAAAAC-0/gVbzOmvfqZwyiUUlwGvjMkdpr1TDY7H8gCLcBGAs/s1600/maxresdefault.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #00676c, #17e8f9), url(../../img/higoo.jpg); }
+      background-image: linear-gradient(to right bottom, #00676c, #17e8f9), url(https://live.staticflickr.com/8528/8625154413_e8d4d75ff7_b.jpg); }
     .card__picture--back-maiz {
       background-blend-mode: overlay;
       clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
-      background-image: linear-gradient(to right bottom, #158f03, #ffbb00), url(../../img/maizzz.jpeg); }
+      background-image: linear-gradient(to right bottom, #158f03, #ffbb00), url(https://www.periodicoelparamo.com/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-08-at-3.15.35-PM.jpeg); }
     .card__picture--back-carmen {
       clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
-      background-image: linear-gradient(to right bottom, #2998ff, #001293), url(../../img/carmenn.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #001293), url(https://i.ytimg.com/vi/RVQSG_5a-3o/maxresdefault.jpg); }
     .card__picture--back-higo {
       background-blend-mode: overlay;
       clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 79%);
-      background-image: linear-gradient(to right bottom, #777, #000), url(../../img/higooo.jpg); }
+      background-image: linear-gradient(to right bottom, #777, #000), url(https://www.periodicoelparamo.com/wp-content/uploads/2019/11/Finca-Higuera-1024x683.jpg); }
   .card__header {
     font-size: 1.8rem;
     font-weight: 300;
@@ -460,12 +407,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     padding: 2px 12px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    @media (max-width: 56.25em) {
-      .card__header-span {
-        font-size: 2rem; } }
-    @media (max-width: 37.5em) {
-      .card__header-span {
-        font-size: 1.5rem; } }
     .card__header-span--1 {
       -webkit-box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
@@ -476,12 +417,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       -webkit-box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(0, 18, 147, 0.85)); }
-      @media (max-width: 56.25em) {
-        .card__header-span--2 {
-          font-size: 1rem; } }
-      @media (max-width: 37.5em) {
-        .card__header-span--2 {
-          font-size: .90rem; } }
     .card__header-span--3 {
       -webkit-box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 11px 11px 31px 1px rgba(0, 0, 0, 0.75);
@@ -498,15 +433,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       text-align: center;
       justify-content: center;
       color: #555555; }
-      @media (max-width: 75em) {
-        .card__details-uno {
-          font-size: 11px; } }
-      @media (max-width: 56.25em) {
-        .card__details-uno {
-          font-size: 10px; } }
-      @media (max-width: 37.5em) {
-        .card__details-uno {
-          font-size: 9px; } }
       .card__details-uno--1 {
         font-size: 1rem;
         padding: 3px;
@@ -516,30 +442,12 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         color: #555555; }
         .card__details-uno--1 a {
           text-decoration: none; }
-        @media (max-width: 75em) {
-          .card__details-uno--1 {
-            font-size: 10px; } }
-        @media (max-width: 56.25em) {
-          .card__details-uno--1 {
-            font-size: 9px; } }
-        @media (max-width: 37.5em) {
-          .card__details-uno--1 {
-            font-size: 8px; } }
     .card__details-dos {
       font-size: 18px;
       padding: 2.37rem;
       text-align: center;
       justify-content: center;
       color: #555555; }
-      @media (max-width: 75em) {
-        .card__details-dos {
-          font-size: 12px; } }
-      @media (max-width: 56.25em) {
-        .card__details-dos {
-          font-size: 10px; } }
-      @media (max-width: 37.5em) {
-        .card__details-dos {
-          font-size: 9px; } }
       .card__details-dos--2 {
         font-size: 18px;
         padding: 3px;
@@ -549,30 +457,12 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         color: #555555; }
         .card__details-dos--2 a {
           text-decoration: none; }
-        @media (max-width: 75em) {
-          .card__details-dos--2 {
-            font-size: 12px; } }
-        @media (max-width: 56.25em) {
-          .card__details-dos--2 {
-            font-size: 10px; } }
-        @media (max-width: 37.5em) {
-          .card__details-dos--2 {
-            font-size: 9px; } }
     .card__details-tres {
       font-size: 18px;
       padding: 2.37rem;
       text-align: center;
       justify-content: center;
       color: #555555; }
-      @media (max-width: 75em) {
-        .card__details-tres {
-          font-size: 13px; } }
-      @media (max-width: 56.25em) {
-        .card__details-tres {
-          font-size: 10px; } }
-      @media (max-width: 37.5em) {
-        .card__details-tres {
-          font-size: 9px; } }
       .card__details-tres--3 {
         font-size: 1rem;
         padding: 3px;
@@ -582,15 +472,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
         color: #555555; }
         .card__details-tres--3 a {
           text-decoration: none; }
-        @media (max-width: 75em) {
-          .card__details-tres--3 {
-            font-size: 10px; } }
-        @media (max-width: 56.25em) {
-          .card__details-tres--3 {
-            font-size: 9px; } }
-        @media (max-width: 37.5em) {
-          .card__details-tres--3 {
-            font-size: 8px; } }
 
 .data {
   width: 75%;
@@ -684,12 +565,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   .map-caracteristicas__maps {
     display: flex;
     justify-content: center; }
-  @media (max-width: 56.25em) {
-    .map-caracteristicas {
-      height: 85rem; } }
-  @media (max-width: 75em) {
-    .map-caracteristicas {
-      height: 85rem; } }
 
 .header {
   height: 95vh;
@@ -939,11 +814,17 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
 
 .section-features {
   padding: 4rem 0;
-  background-image: linear-gradient(to right bottom, rgba(255, 187, 0, 0), rgba(255, 187, 0, 0.9)), url(../../img/plaza1.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 187, 0, 0)), to(rgba(255, 187, 0, 0.9))), url(https://www.skyscrapercity.com/cdn-cgi/image/format=auto,onerror=redirect,width=1920,height=1920,fit=scale-down/https://www.skyscrapercity.com/attachments/e0ae8151-1cf1-4f24-8160-db367d76059c-jpeg.571956/);
+  background-image: -o-linear-gradient(left top, rgba(255, 187, 0, 0), rgba(255, 187, 0, 0.9)), url(https://www.skyscrapercity.com/cdn-cgi/image/format=auto,onerror=redirect,width=1920,height=1920,fit=scale-down/https://www.skyscrapercity.com/attachments/e0ae8151-1cf1-4f24-8160-db367d76059c-jpeg.571956/);
+  background-image: linear-gradient(to right bottom, rgba(255, 187, 0, 0), rgba(255, 187, 0, 0.9)), url(https://www.skyscrapercity.com/cdn-cgi/image/format=auto,onerror=redirect,width=1920,height=1920,fit=scale-down/https://www.skyscrapercity.com/attachments/e0ae8151-1cf1-4f24-8160-db367d76059c-jpeg.571956/);
   background-size: cover;
+  -webkit-transform: skewY(-7deg);
+  -ms-transform: skewY(-7deg);
   transform: skewY(-7deg);
   margin-top: -10rem; }
   .section-features > * {
+    -webkit-transform: skewY(7deg);
+    -ms-transform: skewY(7deg);
     transform: skewY(7deg); }
 
 .party-section {
@@ -966,17 +847,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   position: sticky;
   font-size: 14px;
   z-index: -2000; }
-  @media (max-width: 75em) {
-    .menu {
-      margin-left: -35.5rem;
-      top: 5rem; } }
-  @media (max-width: 56.25em) {
-    .menu {
-      margin-left: -32.5rem;
-      top: 4rem; } }
-  @media (max-width: 37.5em) {
-    .menu {
-      margin-left: -35rem; } }
   .menu-nav {
     padding: 1.25rem;
     margin-top: 1.25rem;
@@ -986,14 +856,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     box-shadow: 6px 9px 1rem 1px rgba(0, 0, 0, 0.98);
     width: 20rem;
     border-radius: 6px; }
-    @media (max-width: 75em) {
-      .menu-nav {
-        height: 48rem;
-        width: 28rem; } }
-    @media (max-width: 56.25em) {
-      .menu-nav {
-        height: 60rem;
-        width: 30rem; } }
     .menu-nav h2 {
       color: #dadada;
       padding-left: 2px;
@@ -1003,9 +865,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       font-weight: 500;
       border-bottom: 2px solid #dadada;
       text-transform: uppercase; }
-      @media (max-width: 75em) {
-        .menu-nav h2 {
-          margin-left: 5rem; } }
     .menu-nav ul {
       position: relative; }
     .menu-nav li {
@@ -1028,9 +887,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       transition: background 0.5s, width 0.5s;
       transition-delay: 0.5s, 0s;
       border: 2px solid #03a9f4; }
-      @media (max-width: 75em) {
-        .menu-nav ul li::before {
-          top: -3px; } }
     .menu-nav ul li:hover::before {
       width: 100%;
       background: #03a9f4;
@@ -1047,14 +903,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       transform: rotate(45deg);
       transition: .5s;
       transition-delay: 0s; }
-      @media (max-width: 75em) {
-        .menu-nav ul li::after {
-          top: 7px;
-          left: 9px; } }
-      @media (max-width: 56.25em) {
-        .menu-nav ul li::after {
-          top: 6px;
-          left: 7px; } }
     .menu-nav ul li:hover::after {
       left: 1.5rem;
       transition-delay: 0.5s;
@@ -1074,15 +922,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   position: absolute;
   right: 4rem;
   margin-left: 30rem; }
-  @media (max-width: 75em) {
-    .museos {
-      right: 11rem; } }
-  @media (max-width: 56.25em) {
-    .museos {
-      right: 5rem; } }
-  @media (max-width: 37.5em) {
-    .museos {
-      right: 3rem; } }
   .museos h4 {
     text-align: center;
     font-size: 1.25rem; }
@@ -1453,73 +1292,11 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
       font-size: 10px;
       text-align: center; }
 
-@media (max-width: 75em) {
-  .titulo {
-    margin-top: 16rem; } }
-
-@media (max-width: 56.25em) {
-  .titulo {
-    margin-top: 53rem; } }
-
-@media (max-width: 37.5em) {
-  .titulo {
-    margin-top: 16rem; } }
-
-@media (max-width: 37.5em) {
-  .titulo-mm {
-    margin-top: 44rem; } }
-
-@media (max-width: 37.5em) {
-  .titulo-mm__n {
-    margin-top: 50rem; } }
-
-@media (max-width: 37.5em) {
-  .titulo-mm__n--c {
-    margin-top: 57rem; } }
-
-@media (max-width: 75em) {
-  .titulo-mm__n--h {
-    margin-top: 20rem; } }
-
-@media (max-width: 56.25em) {
-  .titulo-mm__n--h {
-    margin-top: 53rem; } }
-
-@media (max-width: 75em) {
-  .titulo-mm__n--q {
-    margin-top: 20rem; } }
-
-@media (max-width: 56.25em) {
-  .titulo-mm__n--q {
-    margin-top: 45rem; } }
-
-@media (max-width: 75em) {
-  .titulo-include {
-    margin-top: 16rem; } }
-
-@media (max-width: 56.25em) {
-  .titulo-include {
-    margin-top: 31rem; } }
-
-@media (max-width: 75em) {
-  .titulo-include__m {
-    margin-top: 16rem; } }
-
-@media (max-width: 56.25em) {
-  .titulo-include__m {
-    margin-top: 40rem; } }
-
 .uno {
   margin-top: 33rem;
   position: absolute;
   top: 820rem;
   width: 95.5%; }
-  @media (max-width: 75em) {
-    .uno {
-      top: 870rem; } }
-  @media (max-width: 56.25em) {
-    .uno {
-      margin-top: 80rem; } }
 
 .subb {
   text-align: center; }
@@ -1531,17 +1308,10 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   color: red;
   text-shadow: -1px 1px 3px #000000;
   font-family: 'Lobster', cursive; }
-  @media (max-width: 37.5em) {
-    .tittleh-uno {
-      margin-left: 6rem; } }
 
 .historias {
   margin-top: 8rem;
   margin: 8rem; }
-  @media (max-width: 37.5em) {
-    .historias {
-      margin: 2rem;
-      padding-left: 6rem; } }
   .historias-titulo1 {
     text-align: center;
     font-size: 2.5rem;
@@ -1576,10 +1346,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
     -ms-transform: translateX(15rem) scale(1.5);
     transform: translateX(15rem) scale(1.5); }
 
-@media (max-width: 75em) {
-  .hh3 {
-    margin-top: 5rem; } }
-
 .foot {
   margin-top: 8rem; }
 
@@ -1592,15 +1358,6 @@ Tambien hay otros valores para Transform como scale que hace crecer or disminuir
   flex-wrap: wrap;
   transform-style: preserve-3d;
   width: 68.75rem; }
-  @media (max-width: 75em) {
-    .photo {
-      margin-left: 17rem; } }
-  @media (max-width: 56.25em) {
-    .photo {
-      margin-left: 10.5rem; } }
-  @media (max-width: 37.5em) {
-    .photo {
-      margin-left: -1rem; } }
 
 .photo .card {
   position: relative;

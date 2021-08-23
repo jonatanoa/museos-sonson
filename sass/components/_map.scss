@@ -18,16 +18,4 @@
 	}
     
 
-    @include respond (tab-port) {
-		height: 85rem;
-
-	}
-
-    @include respond (tab-land) {
-        height: 85rem;
-    }
-				//como el phone es mas pequrño viene despues de tab-port
-
-    
-
 }
