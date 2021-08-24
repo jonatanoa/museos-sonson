@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="sass/main.scss">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexsub.html">
+	<link rel="stylesheet" href="indexson.html">
+	<title>Museos Sonson</title>
+  </head>
+
+  <body>
+
+	<div class="navigation">  <!--boton de menu-->
+		<input type="checkbox" class="navigation__checkbox" id="navi-toggle"> <!--button-->
+
+		<label for="navi-toggle" class="navigation__button"> <!--aqui se ingresa la id del input-->
+			<span class="navigation__icon">&nbsp;</span>
+		</label>
+		<div class="navigation__background">&nbsp;</div> <!--fondo-->
+
+		<nav class="navigation__nav"> <!--nav-->
+			<ul class="navigation__list">
+				<li class="navigation__item"><a href="#beginning" class="navigation__link">Inicio</a></li>
+				<li class="navigation__item"><a href="indexson.html" class="navigation__link">Historia de Sonsón</a></li>
+				<li class="navigation__item"><a href="indexsub.html" class="navigation__link">Museos</a></li>
+				<li class="navigation__item"><a href="#fiestas-1" class="navigation__link">Algunas Fiestas tradicionales </a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<a name="beginning" />
+  	<header class="header"> <!--header-->
+  		<div class="header-logo-box">
+  			<img src="img/logo.png" class="header-logo">
+  		</div>
+  		<div class="header-text-box">
+  			<h1 class="heading-primary">
+  				<span class="heading-primary-main">
+            <!---para formatear texto y aplicarle estilos---->
+  					Museos Sonsón
+  				</span>
+  				<span class="heading-primary-sub">
+  					Un pueblo lleno de magia en su cultura
+  				</span>
+  			</h1>  			
+  		</div>
+  	</header>
+	
+	<main>
+		<section class="section-about"> <!--hitoria sonson-->
+			<div class="u-center-text u-margin-bottom-big">
+				<h2 class="heading-secondary">
+					Descubre lo que guarda Sonsón en su historia.
+				</h2>
+			</div>
+
+			<div class="row"> 
+				<div class="col-1-of-2">
+					<h3 class="heading-terciary u-margin-bottom-small">Su localizacion</h3>
+					<p class="paragraph">
+						Sonsón está localizado en el Oriente Antioqueño. Limita al norte con los municipios de El Carmen de Viboral, Cocorná, Puerto Triunfo y San Francisco, al occidente con el municipio de Abejorral y con el departamento de Caldas, al oriente con el departamento de Boyacá y al sur con los municipios de Argelia y Nariño y con el departamento de Caldas.
+					</p>
+					
+					<h3 class="heading-terciary u-margin-bottom-small">Algunos datos historicos.</h3>
+					<p class="paragraph">
+						El Municipio de Sonsón fue fundado el 4 de agosto de 1800 por Don José Joaquín Ruiz y Zapata, juez poblador, vecino de la ciudad de Arma de Rionegro, con setenta y siete personas. Inicialmente lo llamó San José de Ezpeleta de Sonsón en honor al Santo Patrono San José y al Virrey Ezpeleta.
+					</p>
+
+					<a href="indexson.html" class="btn-text">Leer mas &rarr;</a> <!-- &rarr; se traduce como una flecha-->
+				</div>
+				
+				<div class="col-1-of-2">
+					<div class="composition">
+						<img src="img/img1.jpg" alt="Antigua Catedral" class="composition__photo composition__photo--p1">
+						<img src="img/img2.jpg" alt="Calle principal" class="composition__photo composition__photo--p2">
+						<img src="img/img3.jpg" alt="Foto Sonsón" class="composition__photo composition__photo--p3">
+					</div>
+				</div>
+		   </div>
+		</section>
+		<section class="section-features"> <!--museos-->
+			<h2 class="titulo-2">Museos</h2>
+			<div class="row">
+				<div class="col-1-of-4">
+					<div class="feature-box">
+						<a href="indexsub.html">
+							<img src="img/abuelos.jpg" alt="Museo Casa de los Abuelos" class="feature-box__img abuelos">
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-1-of-4">
+					<div class="feature-box">
+						<a href="indexsub.html">
+							<img src="img/religioso.jpg" alt="Museo de Arte Religioso" class="feature-box__img religioso">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1-of-4">
+					<div class="feature-box">
+						<a href="indexsub.html">
+							<img src="img/ciudadela.jpg" alt="Museo Pablo Jaramillo" class="feature-box__img ciudadela">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1-of-4">
+					<div class="feature-box">
+						<a href="indexsub.html">
+							<img src="img/maiz.jpg" alt="Museo Fiesta del maiz" class="feature-box__img Maiz">
+						</a>	
+					</div>
+				</div>
+			</div>
+			<a href="indexsub.html" class="btn-2">Mas museos</a> <!-- &rarr; se traduce como una flecha-->
+		</section>
+		<section class="party-section"> <!--fiestas-->
+			<div class="u-center-text u-margin-bottom-big">
+				<a name="fiestas-1" /> <!--anclaje-->
+				<h2 class="heading-secondary">
+					Algunas fiestas tradicionales
+				</h2>
+			</div>
+
+			<div class="row"> 
+				<div class="col-1-of-3"> <!--tarjeta 1-->
+					<div class="card">  <!--lado padre -->
+						<div class="card__side card__side--front"> <!--frontal-->
+							<div class="card__picture card__picture--1">
+								&nbsp;
+							</div>
+							<h4 class="card__header"> <!--encabezado adelante-->
+								<span class="card__header-span card__header-span--1">Fiestas de Maiz</span>
+								
+							</h4>
+							<div class="card__details-uno"><!--texto frontal-->
+								<p>
+									En el mes de agosto de 1937 Sonsón celebró una fiesta
+									 típica en la Casa Gregorio Gutiérrez González, un punto
+									  de encuentro para los de entonces, quienes vistieron 
+									  trajes de usanza campesina en medio de  cuerda, cabalgatas
+									   licores y comidas típicas de la región.
+								</p>
+							</div>
+						</div>
+
+						<div class="card__side card__side--back card__side--back-1">
+							<div class="card__picture card__picture--back-maiz">
+								&nbsp;
+							</div>
+							<div class="card__details-uno--1"><!--text back-->
+								<p>
+									Tiempo después algunos personajes concibieron la idea que se 
+									convirtió en el “Acuerdo Número 011 por el cual se ordena la 
+									celebración de la Fiesta del Maíz que como tal se celebró 
+									por primera vez el 11 de agosto de 1938"
+									<br>
+									La Fiesta del Maíz “es el emblema de una Casta, 
+									ofrecido a la patria entera como símbolo de fe y pujanza y tradición.”
+									<br>
+									Fuente:<a href="https://infolocal.comfenalcoantioquia.com/index.php/event/fiestas-del-maiz-sonson" target="_new">Comfenalco Antioquia</a> <!--targe "_new" hace que cuando se le de clic a al enlace se habra en una nueva pestaña-->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-1-of-3"> <!--tarjeta 2-->
+					<div class="card">  <!--lado padre -->
+						<div class="card__side card__side--front"> <!--frontal-->
+							<div class="card__picture card__picture--2">
+								&nbsp;
+							</div>
+							<h4 class="card__header"> <!--encabezado adelante-->
+								<span class="card__header-span card__header-span--2">Fiestas de la Virgen del Carmen</span>
+								
+							</h4>
+							<div class="card__details-dos"><!--texto frontal-->
+								<p>
+									La apertura de esta fiesta se realiza del 7 al 16 de julio de cada año 
+									con una solemne celebración eucaristica y seguidamente una serenata 
+									por las principales calles del municipio de Sonsón.
+								</p>
+							</div>
+						</div>
+
+						<div class="card__side card__side--back card__side--back-2">
+							<div class="card__picture card__picture--back-carmen">
+								&nbsp;
+							</div>
+							<div class="card__details-dos--2"><!--text back-->
+								<p>
+									Los Padres Carmelitas tomaron posesión de la Capilla, 
+									el 30 de septiembre de 1914 y desde entonces hasta 
+									hoy han estado a cargo de la Iglesia de Nuestra 
+									Señora del Carmen, dedicado a la Virgen María 
+									bajo la advocación del Carmen.
+									<br>
+									fuente: <a href="https://es.wikipedia.org/wiki/Iglesia_de_Nuestra_Se%C3%B1ora_del_Carmen_(Sons%C3%B3n)" target="_new" >Wikipedia</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+				<div class="col-1-of-3"> <!--targeta 3-->
+					<div class="card">  <!--lado padre -->
+						<div class="card__side card__side--front"> <!--frontal-->
+							<div class="card__picture card__picture--3">
+								&nbsp;
+							</div>
+							<h4 class="card__header"> <!--encabezado adelante-->
+								<span class="card__header-span card__header-span--3">Fiestas del Higo</span>
+								
+							</h4>
+							<div class="card__details-tres"><!--texto frontal-->
+								<p>
+									"Fiestas y Reinado del Higo en el corregimiento 
+									Alto de Sabanas del municipio de Sonsón, 
+									una de las fiestas mas autóctonas del  territorio paisa".
+								</p>
+							</div>
+						</div>
+
+						<div class="card__side card__side--back card__side--back-3">
+							<div class="card__picture card__picture--back-higo">
+								&nbsp;
+							</div>
+							<div class="card__details-tres--3"><!--text back-->
+								<p>
+									La festividad se celebra en el mes de Julio, 
+									es un evento que cuenta con gran afluencia de 
+									público de Sonsón y otros municipios de Antioquia 
+									debido a los hermosos paisajes y a las actividades 
+									que allí se realizan. Dentro de la programación de 
+									estas fiestas se cuentan tablados, bailes con orquestas, 
+									cabalgatas, concursos
+									<br>
+									Fuente:<a href="https://noticiasorienteantioqueno.wordpress.com/2012/06/16/corregimiento-alto-de-sabanas-de-sonson-espera-por-sus-fiestas-del-higo/" target="_new">Noticias Oriente Antioqueño</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-data"> <!--datos curiosos-->
+			<div class="bg-video">
+				<video class="bg-video__content" autoplay muted loop>
+					<source src="img/paramo.mp4" type="video/mp4">
+					
+						Your browser  is not supported! <!--este mensaje aparece si los videos no se cargan-->
+				</video>
+			</div>
+			<div class="u-center-text u-margin-bottom-big">
+				<h2 class="heading-secondary">
+					Datos Curiosos de Sonsón
+				</h2>
+			</div>
+			<div class="row">
+				<div class="data">
+					<figure class="data__shape">
+						<img src="img/paramo.jpg" alt="Páramo de Sonsón" class="data__img">
+						<figcaption class="data__caption">
+							Páramo
+						</figcaption>
+					</figure>
+					<div class="data__text">
+						<h3 class="heading__tertiary u-margin-bottom-small">
+							Páramo de Sonsón
+						</h3>
+						<p class="data__texto-1">
+							"El Páramo de Sonsón es una importante reserva ecológica, 
+							donde abundan importantes especies de fauna y flora, 
+							únicas en el mundo. Allí nacen ríos y quebradas, los 
+							cuales desembocan en el Río Magdalena."
+						</p>
+					</div>
+				</div>
+
+				<div class="data">
+					<figure class="data__shape">
+						<img src="img/balcones.jpg" alt="Páramo de Sonsón" class="data__img-1">
+						<figcaption class="data__caption">
+							<cite><q>El balcon mas lindo de Antioquia</q></cite>
+						</figcaption>
+					</figure>
+					<div class="data__text">
+						<h3 class="heading__tertiary u-margin-bottom-small">
+							Balcones coloniales
+						</h3>
+						<p class="data__texto-2">
+							Ubicada en el costado sur del Parque Principal Ruiz 
+							y Zapata se encuentra una hermosa y representativa 
+							edificación de tres plantas con catorce balcones del 
+							mismo tamaño y estilos diferentes en su segundo y tercer 
+							nivel que evocan el neoclásico criollo e impactan por su 
+							tamaño y detalles artesanales.
+							<br>
+							Fuente: <a href="https://www.periodicoelparamo.com/el-balcon-mas-lindo-de-antioquia/" target="_new">Periodico el paramo.</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="header-mapa">  <!--mapa-->
+			<section class="map-caracteristicas">
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary mapat">
+						<div class="title">Mapa de Sonsón</div>
+					</h2>
+					<div class="map-caracteristicas__maps">
+					    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6461.616730801367!2d-75.309136954232!3d5.710635209611866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sco!4v1614308033828!5m2!1ses-419!2sco" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						
+					</div>
+				</div>
+			</section>
+		</section>
+	</main>
+	<footer class="footer">  <!--footer-->
+		<div class="footer__logo-box">
+			<img src="img/logo.png" alt="Paramo Software" class="footer__logo">
+		</div>
+		<div class="row">
+			<div class="col-1-of-2">
+				<div class="footer__navigation"> <!--linea debajo de los elemento de navegacion-->
+					<ul class="footer__list">
+						<li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">contact </a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Paramo Software </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-1-of-2">
+				<p class="footer__copyright">
+					Creado por <a href="https://www.fiverr.com/jonatanosorioa/development-of-web-pages-with-html-and-css" class="footer__link">Jonatan Osorio A.</a> Diseñado por<a href="https://www.fiverr.com/jonatanosorioa/development-of-web-pages-with-html-and-css" class="footer__link">Jonatan Osorio A. </a>
+				</p>
+			</div>
+		</div>
+	</footer>
+  	
+
+   <!-- <section class="grid-test">
+	   <div class="row"> 
+			<div class="col-1-of-2">
+				col 1 of 2
+			</div>
+			<div class="col-1-of-2">
+				col 1 of 2
+			</div>
+	   </div>
+	   <div class="row"> 
+			<div class="col-1-of-3">
+				col 1 of 3
+			</div>
+			<div class="col-1-of-3">
+				col 1 of 3
+			</div>
+			<div class="col-1-of-3">
+				col 1 of 3
+			</div>
+  	   </div>
+	   <div class="row"> 
+			<div class="col-1-of-3">
+				col 1 of 3
+			</div>
+			<div class="col-2-of-3">
+				col 2 of 3
+			</div>
+   		</div>
+
+		<div class="row"> 
+			<div class="col-1-of-4">
+				col 1 of 4
+			</div>
+			<div class="col-1-of-4">
+				col 1 of 4
+			</div>
+			<div class="col-1-of-4">
+				col 1 of 4
+			</div>
+			<div class="col-1-of-4">
+				col 1 of 4
+			</div>
+  	 	</div>
+		<div class="row"> 
+			<div class="col-1-of-4">
+				col 1 of 4
+			</div>
+			<div class="col-1-of-4">
+				col 1 of 4
+			</div>
+			<div class="col-2-of-4">
+				col 2 of 4
+			</div>
+	
+  	 	</div>
+
+		<div class="row"> 
+			<div class="col-1-of-4">
+				col 1 of 4
+			</div>
+			<div class="col-3-of-4">
+				col 3 of 4
+			</div>
+	
+  	 	</div>   
+   </section> -->
+  
+  </body>
+</html>
